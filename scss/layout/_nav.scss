@@ -32,14 +32,23 @@
             margin-top: 1rem;
             li{
                 margin-bottom: 2rem;
-                
                 a{
                     color: $color-black;
                     font-weight: $fw-regular;
-                    font-size: 1.5rem;
-                    &:hover{
-                        font-weight: $fw-bold;
-                    }
+                    font-size: 1.3rem;
+                    position: relative;
+                    overflow: hidden;
+                    background-clip: text;
+                    background: linear-gradient(to right, $color-primary, $color-primary 50%, $color-black 50%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-size: 200% 100%;
+                    background-position: 100%;
+                    transition: background-position 335ms ease;
+                    text-decoration: none; // text decorations are clipped in WebKit browsers
+                        &:hover{
+                            background-position: 0 100%;
+                        }
                 }
             }
         }
@@ -121,7 +130,7 @@
     }
 
 
-
+    
    
   @include respond-to(desktop) {
     .navbar{
@@ -170,7 +179,7 @@
             display: block;
             position: absolute;
             right: 3%;
-            top: 2.5%;
+            top: 1.9%;
         }
         }
 
@@ -178,4 +187,19 @@
   }
  
     
+  @include respond-to(large-desktop) {
+    .navbar{
+        .nav-container{
+            .menu-items{
+                ul{
+                    li{
+                        a{
+                            font-size: 1.7rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
     

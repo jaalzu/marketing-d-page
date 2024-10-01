@@ -6,25 +6,26 @@
   }
 
 
-
   @mixin respond-to($breakpoint) {
     @if $breakpoint == mobile {
-      @media (max-width: 767px) {
+      @media (max-width: 667px) { // Máximo para móviles
         @content;
       }
     } @else if $breakpoint == tablet {
-      @media (min-width: 768px) and (max-width: 1024px) {
+      @media (min-width: 668px) and (max-width: 1024px) { // Para tabletas
         @content;
       }
     } @else if $breakpoint == desktop {
-      @media (min-width: 1025px) {
+      @media (min-width: 1025px) { // Para escritorio estándar
         @content;
       }
     } @else if $breakpoint == large-desktop {
-      @media (min-width: 1200px) {
+      @media (min-width: 1600px) { // Para pantallas grandes
         @content;
       }
+    
     } @else {
       @warn "El breakpoint `#{$breakpoint}` no está definido.";
     }
   }
+  

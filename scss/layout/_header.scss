@@ -3,7 +3,6 @@
     .hero{
         display: flex;
         flex-direction: column;
-        margin-inline: 5vw;
         overflow: hidden;
 
         .hero__img{
@@ -11,27 +10,29 @@
             align-items: center;
             justify-content: center;
             width: 100%;
-            margin-bottom: .5rem;
             img{
-                width: 420px;
+                width: 380px;
             }
         }
 
         .hero__description{
+            margin-inline: 1vw;
             .hero__title{
-                font-size: 1.5rem;
+                font-size: 1.450rem;
                 margin-bottom: 1.3rem;
-                line-height: 1.150;
+                line-height: 1;
                 text-align: center;
             }
 
             .hero__text{
+                margin-inline: 3vw;
                 margin-bottom: 2rem;
                 line-height: 1.5;
             }
 
             .hero__buttons{
-                gap: 1.5rem;
+                margin-left: .4rem;
+                gap: .8rem;
                 display: flex;
                 align-items: center;
 
@@ -39,10 +40,137 @@
                     font-size: 1rem;
                     text-decoration:1px solid underline;
                     color: $color-black;
+                    display: inline-flex;
+                    align-items: center;
+                    margin: 0;
+                    position: relative;
+                    overflow: hidden;
+                    background-clip: text;
+                    background: linear-gradient(to right, $color-primary, $color-primary 50%, $color-black 50%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-size: 200% 100%;
+                    background-position: 100%;
+                    transition: background-position 375ms ease;
+                        &:hover{
+                            background-position: 0 100%;
+                        }
                 }
             }
-
-            
         }
     }
 }
+
+
+@include respond-to(tablet) {
+    .header{
+        .hero{
+            .hero__img{
+                img{
+                    width: 520px;
+                }
+            }
+
+            .hero__description{
+                .hero__title{
+                    font-size: 1.8rem;
+                    margin-inline: 3vw;
+                }
+
+                .hero__text{
+                    text-align: center;
+                    p{
+                        font-size: 1.1rem;
+                    }
+                }
+
+                .hero__buttons{
+                    margin-left: 1rem;
+                    gap: 2rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+
+
+@include respond-to(desktop) {
+    .header{
+        .hero{
+            overflow: visible;
+            flex-direction: row-reverse;
+            margin-top: 6rem;
+
+            .hero__img{
+                img{
+                    width: 550px;
+                }
+            }
+
+            .hero__description{
+                margin-left: 3rem;
+                .hero__title{
+                    font-size: 2rem;
+                    text-align: start;
+                    line-height: 1.1;
+                }
+
+                .hero__text{
+                    margin-inline: 0;
+                    margin-bottom: 3rem;
+                    p{
+                        font-size: 1.1rem;
+                    }
+                    }
+
+                    .hero__buttons{
+                        margin-left: 0;
+                        gap: 2rem;
+
+                        
+                    }
+            }
+        }
+    }
+}
+
+
+@include respond-to(large-desktop) {
+    .header{
+        .hero{
+            .hero__img{
+                img{
+                    min-width: 100%;
+                }
+            }
+            .hero__description{
+            margin-top: 8rem;
+            margin-left: 10rem;
+            
+                .hero__title{
+                    font-size: 2.9rem;
+                    margin-bottom: 4rem;
+                    max-width: 90%;
+                }
+                .hero__text{
+                    margin-bottom: 4rem;
+                    p{
+                        font-size: 1.5rem;
+                        max-width: 70%;
+                    }
+                }
+                .hero__buttons{
+                    .services__link{
+                        font-size: 1.3rem;
+                      
+                    }
+                }
+            }
+        }
+    }
+}
+
