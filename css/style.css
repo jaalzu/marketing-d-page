@@ -201,6 +201,7 @@ p, span, a {
   font-size: 1.5rem;
   margin-bottom: 1.3rem;
   line-height: 1.15;
+  text-align: center;
 }
 .header .hero .hero__description .hero__text {
   margin-bottom: 2rem;
