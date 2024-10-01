@@ -1,0 +1,191 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+  background-image: radial-gradient(circle at 34% 47%, hsla(237, 80%, 40%, 0.3) 4.47%, transparent 73.15%), radial-gradient(circle at 74% 20%, hsla(248, 100%, 63%, 0.3) 3.49%, transparent 63.7%);
+  background-blend-mode: normal;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p, span, a {
+  font-family: "Open Sans", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  height: 2rem;
+}
+.navbar .nav-container {
+  margin-top: 5rem;
+}
+.navbar .nav-container .logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 2rem;
+  color: #1E1926;
+}
+.navbar .menu-items {
+  height: auto;
+  width: 100%;
+  backdrop-filter: blur(150px);
+  transform: translateY(-150%);
+  border-top: 2px solid #FEF6FF;
+  border-bottom: 2px solid #FEF6FF;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+  justify-content: center;
+}
+.navbar .menu-items ul {
+  margin-top: 1rem;
+}
+.navbar .menu-items ul li {
+  margin-bottom: 2rem;
+}
+.navbar .menu-items ul li a {
+  color: #1E1926;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.navbar .menu-items ul li a:hover {
+  font-weight: 700;
+}
+.navbar .nav__button {
+  display: none;
+}
+.navbar .nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 30px;
+  right: 25px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+.navbar .nav-container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 30px;
+  right: 25px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navbar .nav-container .hamburger-lines .line {
+  display: block;
+  height: 0.155rem;
+  width: 100%;
+  border-radius: 10px;
+  background: #1E1926;
+}
+.navbar .nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+.navbar .nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+.navbar .nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+.navbar .nav-container input[type=checkbox]:checked ~ .menu-items {
+  transform: translateY(0);
+}
+.navbar .nav-container input[type=checkbox]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+.navbar .nav-container input[type=checkbox]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+.navbar .nav-container input[type=checkbox]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+.navbar .nav-container input[type=checkbox]:checked ~ .logo {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  .navbar {
+    padding-inline: 5vw;
+    height: 100%;
+  }
+  .navbar .nav-container {
+    width: 100%;
+    display: flex;
+    margin-top: 0;
+    align-items: center;
+  }
+  .navbar .nav-container .logo {
+    position: static;
+    margin-top: 1.5rem;
+  }
+  .navbar .nav-container .menu-items {
+    transform: translateY(0%);
+    margin-right: 4rem;
+    backdrop-filter: none;
+    margin-top: 2rem;
+    flex-direction: row;
+    border-top: none;
+    border-bottom: none;
+  }
+  .navbar .nav-container .menu-items ul {
+    display: flex;
+    margin-top: 0;
+    gap: 2rem;
+  }
+  .navbar .nav-container .menu-items ul li {
+    margin-bottom: 0;
+  }
+  .navbar .nav-container .checkbox {
+    display: none;
+  }
+  .navbar .nav-container .hamburger-lines {
+    display: none;
+  }
+  .navbar .nav-container .nav__button {
+    display: block;
+    position: absolute;
+    right: 3%;
+    top: 2.5%;
+  }
+}
+.btn {
+  padding: 0.8rem 1.4rem;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.2rem;
+  outline: none;
+  border-radius: 7px;
+}
+.btn.secondary {
+  font-weight: 700;
+  color: #1E1926;
+  border: 2px solid #1E1926;
+  background: transparent;
+  transition: 0.2s ease;
+}
+.btn.secondary:hover {
+  color: #FEF6FF;
+  background: linear-gradient(to top, #390ae3, #5500d5, #6600c8, #7100bb, #7900af);
+}
+
+/*# sourceMappingURL=style.css.map */

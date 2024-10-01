@@ -1,0 +1,33 @@
+$ff-primary:"Montserrat", sans-serif;
+$ff-secondary:"Open Sans", sans-serif;
+
+
+$fw-light:300;
+$fw-regular:400;
+$fw-bold:700;
+
+
+$gradient-primary: linear-gradient(to top, #390ae3, #5500d5, #6600c8, #7100bb, #7900af);
+
+$color-primary:#390AE3;
+$color-black:#1E1926;
+$color-white:#FEF6FF;
+$color-footer:#9A75CD;
+
+
+$color-quotes:#FEF6FF66;
+
+
+
+$background-color: hsla(0, 0%, 100%, 1);
+$background-image: radial-gradient(
+  circle at 34% 47%, 
+  hsla(237, 80%, 40%, 0.3) 4.47%, 
+  transparent 73.15%
+), radial-gradient(
+  circle at 74% 20%, 
+  hsla(248, 100%, 63%, 0.3) 3.49%, 
+  transparent 63.70%
+);
+$background-blend-mode: normal;
+$background-repeat: no-repeat;

@@ -1,0 +1,16 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    @include background-styles;
+  height: 100vh;
+    }
+
+
+
+    
