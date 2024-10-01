@@ -14,6 +14,16 @@ body {
   height: 100vh;
 }
 
+p {
+  font-size: 1rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 h1, h2, h3 {
   font-family: "Montserrat", sans-serif;
 }
@@ -24,7 +34,7 @@ p, span, a {
 
 .navbar {
   width: 100%;
-  height: 2rem;
+  height: 0.5rem;
 }
 .navbar .nav-container {
   margin-top: 5rem;
@@ -168,13 +178,57 @@ p, span, a {
     top: 2.5%;
   }
 }
+.header {
+  height: auto;
+}
+.header .hero {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 5vw;
+  overflow: hidden;
+}
+.header .hero .hero__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.header .hero .hero__img img {
+  width: 420px;
+}
+.header .hero .hero__description .hero__title {
+  font-size: 1.5rem;
+  margin-bottom: 1.3rem;
+  line-height: 1.15;
+}
+.header .hero .hero__description .hero__text {
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+.header .hero .hero__description .hero__buttons {
+  gap: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.header .hero .hero__description .hero__buttons .services__link {
+  font-size: 1rem;
+  text-decoration: 1px solid underline;
+  color: #1E1926;
+}
+
 .btn {
-  padding: 0.8rem 1.4rem;
+  padding: 0.8rem 1.2rem;
   display: inline-block;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   outline: none;
   border-radius: 7px;
+  text-align: center;
+}
+.btn.primary {
+  background: linear-gradient(to top, #390ae3, #5500d5, #6600c8, #7100bb, #7900af);
+  color: #FEF6FF;
 }
 .btn.secondary {
   font-weight: 700;

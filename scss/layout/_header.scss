@@ -1,0 +1,47 @@
+.header{
+    height: auto;
+    .hero{
+        display: flex;
+        flex-direction: column;
+        margin-inline: 5vw;
+        overflow: hidden;
+
+        .hero__img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: .5rem;
+            img{
+                width: 420px;
+            }
+        }
+
+        .hero__description{
+            .hero__title{
+                font-size: 1.5rem;
+                margin-bottom: 1.3rem;
+                line-height: 1.150;
+            }
+
+            .hero__text{
+                margin-bottom: 2rem;
+                line-height: 1.5;
+            }
+
+            .hero__buttons{
+                gap: 1.5rem;
+                display: flex;
+                align-items: center;
+
+                .services__link{
+                    font-size: 1rem;
+                    text-decoration:1px solid underline;
+                    color: $color-black;
+                }
+            }
+
+            
+        }
+    }
+}
