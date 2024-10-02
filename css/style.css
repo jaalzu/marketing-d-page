@@ -34,16 +34,16 @@ p, span, a {
 
 .navbar {
   width: 100%;
-  height: 0.5rem;
+  height: 0.3rem;
 }
 .navbar .nav-container {
   margin-top: 5rem;
 }
 .navbar .nav-container .logo {
   position: absolute;
-  top: 20px;
+  top: 26px;
   left: 20px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #1E1926;
 }
 .navbar .menu-items {
@@ -199,25 +199,23 @@ p, span, a {
 .header .hero {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 .header .hero .hero__img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
 }
 .header .hero .hero__img img {
-  width: 380px;
+  max-width: 100%;
 }
 .header .hero .hero__description {
-  margin-inline: 1vw;
+  text-align: center;
+  margin-inline: 2vw;
 }
 .header .hero .hero__description .hero__title {
-  font-size: 1.45rem;
+  font-size: 1.4rem;
   margin-bottom: 1.3rem;
   line-height: 1;
-  text-align: center;
 }
 .header .hero .hero__description .hero__text {
   margin-inline: 3vw;
@@ -225,14 +223,13 @@ p, span, a {
   line-height: 1.5;
 }
 .header .hero .hero__description .hero__buttons {
-  margin-left: 0.4rem;
   gap: 0.8rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .header .hero .hero__description .hero__buttons .services__link {
   font-size: 1rem;
-  text-decoration: 1px solid underline;
   color: #1E1926;
   display: inline-flex;
   align-items: center;
@@ -252,78 +249,72 @@ p, span, a {
 }
 
 @media (min-width: 668px) and (max-width: 1024px) {
+  .header .hero .hero__img {
+    margin-bottom: 0.5rem;
+  }
   .header .hero .hero__img img {
-    width: 520px;
+    width: 70%;
   }
   .header .hero .hero__description .hero__title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-inline: 3vw;
   }
   .header .hero .hero__description .hero__text {
     text-align: center;
   }
   .header .hero .hero__description .hero__text p {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
   .header .hero .hero__description .hero__buttons {
-    margin-left: 1rem;
-    gap: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 1.7rem;
   }
 }
 @media (min-width: 1025px) {
   .header .hero {
-    overflow: visible;
-    flex-direction: row-reverse;
-    margin-top: 6rem;
+    margin-top: 2rem;
   }
   .header .hero .hero__img img {
-    width: 550px;
+    width: 50%;
   }
   .header .hero .hero__description {
-    margin-left: 3rem;
+    text-align: center;
   }
   .header .hero .hero__description .hero__title {
-    font-size: 2rem;
-    text-align: start;
-    line-height: 1.1;
+    font-size: 1.8rem;
+    line-height: 1.2;
   }
   .header .hero .hero__description .hero__text {
-    margin-inline: 0;
-    margin-bottom: 3rem;
+    margin-inline: 20vw;
   }
   .header .hero .hero__description .hero__text p {
-    font-size: 1.1rem;
+    font-size: 1.06rem;
   }
   .header .hero .hero__description .hero__buttons {
-    margin-left: 0;
     gap: 2rem;
   }
 }
 @media (min-width: 1600px) {
+  .header .hero .hero__img {
+    margin-top: 1rem;
+  }
   .header .hero .hero__img img {
-    min-width: 100%;
+    width: 33%;
   }
   .header .hero .hero__description {
-    margin-top: 8rem;
-    margin-left: 10rem;
+    text-align: center;
   }
   .header .hero .hero__description .hero__title {
-    font-size: 2.9rem;
-    margin-bottom: 4rem;
-    max-width: 90%;
+    font-size: 2.45rem;
+    margin-inline: 10vw;
   }
   .header .hero .hero__description .hero__text {
-    margin-bottom: 4rem;
+    margin-block: 2.5rem;
   }
   .header .hero .hero__description .hero__text p {
-    font-size: 1.5rem;
-    max-width: 70%;
+    font-size: 1.4rem;
   }
   .header .hero .hero__description .hero__buttons .services__link {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 }
 .btn {
@@ -377,19 +368,20 @@ p, span, a {
 }
 @media (min-width: 1025px) {
   .btn.primary {
-    padding: 0.9rem 1.7rem;
+    padding: 1rem 1.9rem;
   }
   .btn.secondary {
-    padding: 0.6rem 1.3rem;
+    padding: 0.6rem 1.1rem;
   }
 }
 @media (min-width: 1600px) {
   .btn.primary {
-    padding: 1.3rem 2.5rem;
-    font-size: 1.3rem;
+    padding: 1.3rem 2.7rem;
+    font-size: 1.4rem;
   }
   .btn.secondary {
-    padding: 1rem 2rem;
+    padding: 1rem 2.3rem;
+    font-size: 1.2rem;
   }
 }
 
