@@ -18,7 +18,7 @@
             text-align: center;
             margin-inline: 2vw;
             .hero__title{
-                font-size: 1.4rem;
+                font-size: clamp(1.3rem,1.3vw,2.5rem);
                 margin-bottom: 1.3rem;
                 line-height: 1;
             }
@@ -26,7 +26,9 @@
             .hero__text{
                 margin-inline: 3vw;
                 margin-bottom: 2rem;
-                line-height: 1.5;
+                p{
+                    font-size: 1rem;
+                }   
             }
 
             .hero__buttons{
@@ -71,7 +73,6 @@
 
             .hero__description{
                 .hero__title{
-                    font-size: 1.6rem;
                     margin-inline: 3vw;
                 }
 
@@ -107,7 +108,6 @@
                 text-align: center;
 
                 .hero__title{
-                    font-size: 1.6rem;
                     line-height: 1.2;
                 }
 
@@ -135,19 +135,18 @@
                 margin-top: 1rem;
 
                 img{
-                    width: 33%;
+                    width: 30%;
                 }
             }
             .hero__description{
                 text-align: center;
                 .hero__title{
-                    font-size: 2rem;
-                    margin-inline: 10vw;
+                    margin-inline: 15vw;
                 }
                 .hero__text{
                     margin-block: 2.5rem;
                     p{
-                        font-size: 1.2rem;
+                        font-size: 1.1rem;
                     }
                 }
                 .hero__buttons{
