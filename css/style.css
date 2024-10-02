@@ -176,7 +176,7 @@ p, span, a {
     margin-bottom: 0;
   }
   .navbar .nav-container .menu-items ul li a {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .navbar .nav-container .checkbox {
     display: none;
@@ -278,19 +278,20 @@ p, span, a {
     margin-top: 2rem;
   }
   .header .hero .hero__img img {
-    width: 50%;
+    width: 40%;
   }
   .header .hero .hero__description {
     text-align: center;
   }
   .header .hero .hero__description .hero__title {
     line-height: 1.2;
+    margin-inline: 20vw;
   }
   .header .hero .hero__description .hero__text {
     margin-inline: 20vw;
   }
   .header .hero .hero__description .hero__text p {
-    font-size: 1.06rem;
+    font-size: 1.02rem;
   }
   .header .hero .hero__description .hero__buttons {
     gap: 2rem;

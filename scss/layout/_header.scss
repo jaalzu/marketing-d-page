@@ -100,7 +100,7 @@
 
             .hero__img{
                 img{
-                    width: 50%;
+                    width: 40%;
                 }
             }
 
@@ -109,12 +109,14 @@
 
                 .hero__title{
                     line-height: 1.2;
+                    margin-inline: 20vw;
+                    
                 }
 
                 .hero__text{
                     margin-inline: 20vw;
                     p{
-                        font-size: 1.060rem;
+                        font-size: 1.020rem;
                     }
                     }
 
