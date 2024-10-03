@@ -169,7 +169,7 @@ img {
 .section__title {
   text-align: center;
   margin-block: 4rem;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   margin-inline: 10vw;
   color: #1E1926;
 }
@@ -177,7 +177,7 @@ img {
   margin-bottom: 0.3rem;
   display: block;
   color: #390AE3;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 h1, h2, h3 {
@@ -531,10 +531,10 @@ p, span, a {
     margin-inline: 25vw;
   }
   .services .services__box .services__description h3 {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
   .services .services__box .services__description p {
-    font-size: 1.06rem;
+    font-size: 1.04rem;
   }
 }
 @media (min-width: 1600px) {
@@ -543,12 +543,6 @@ p, span, a {
   }
   .services .services__box .services__description {
     margin-inline: 28vw;
-  }
-  .services .services__box .services__description h3 {
-    font-size: 2rem;
-  }
-  .services .services__box .services__description p {
-    font-size: 1.09rem;
   }
 }
 
