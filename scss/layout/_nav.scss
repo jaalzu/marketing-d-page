@@ -55,6 +55,9 @@
     .nav__button{
         display: none;
     }
+    .nav__social{
+        display: none;
+    }
     
     
     .nav-container .checkbox {
@@ -175,12 +178,20 @@
            }
 
 
-           .nav__button{
-            display: block;
-            position: absolute;
-            right: 3%;
-            top: 1.9%;
-        }
+           .nav__social{
+               display: block;
+               ul{
+    display: grid;
+    position: absolute;
+    right: 3%;
+    grid-template-columns: 1fr 1fr;                
+                li{
+                    img{
+                        width: 33%;
+                    }
+                }
+            }
+           }
         }
 
     }

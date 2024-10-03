@@ -242,6 +242,9 @@ p, span, a {
 .navbar .nav__button {
   display: none;
 }
+.navbar .nav__social {
+  display: none;
+}
 .navbar .nav-container .checkbox {
   position: absolute;
   display: block;
@@ -340,11 +343,17 @@ p, span, a {
   .navbar .nav-container .hamburger-lines {
     display: none;
   }
-  .navbar .nav-container .nav__button {
+  .navbar .nav-container .nav__social {
     display: block;
+  }
+  .navbar .nav-container .nav__social ul {
+    display: grid;
     position: absolute;
     right: 3%;
-    top: 1.9%;
+    grid-template-columns: 1fr 1fr;
+  }
+  .navbar .nav-container .nav__social ul li img {
+    width: 33%;
   }
 }
 @media (min-width: 1600px) {
@@ -479,8 +488,7 @@ p, span, a {
   padding-bottom: 3rem;
 }
 .services .services__box {
-  display: flex;
-  flex-direction: column;
+  margin-block: 6rem;
 }
 .services .services__box .services__img {
   margin-bottom: 2rem;
@@ -492,6 +500,7 @@ p, span, a {
   margin-inline: 5vw;
 }
 .services .services__box .services__description h3 {
+  text-align: center;
   color: #390AE3;
   font-size: 1.6rem;
   margin-bottom: 0.9rem;

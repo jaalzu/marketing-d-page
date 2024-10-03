@@ -2,10 +2,7 @@
     height: auto;
     padding-bottom: 3rem;
     .services__box{
-        display: flex;
-        flex-direction: column;
-
-        
+        margin-block: 6rem;
         .services__img{
             margin-bottom: 2rem;
             img{
@@ -16,6 +13,7 @@
         .services__description{
             margin-inline: 5vw;
             h3{
+                text-align: center;
                 color: $color-primary;
                 font-size: 1.6rem;
                margin-bottom: .9rem;
@@ -44,6 +42,7 @@
             .services__description{
                 margin-inline: 10vw;
                 h3{
+                    
                     font-size: 1.7rem;
                 }
             }
