@@ -1,6 +1,6 @@
 .header{
     height: auto;
-    
+    padding-bottom: 2rem;
     .hero{
         display: flex;
         flex-direction: column;
@@ -106,23 +106,20 @@
 
             .hero__description{
                 text-align: center;
+                margin-inline: 20vw;
 
                 .hero__title{
                     line-height: 1.2;
-                    margin-inline: 20vw;
-                    
                 }
 
                 .hero__text{
-                    margin-inline: 20vw;
-                    p{
-                        font-size: 1.020rem;
-                    }
-                    }
+                                p{
+                                    font-size: 1.020rem;
+                                }
+                            }
 
                     .hero__buttons{
                         gap: 2rem;
-                        
                     }
             }
         }

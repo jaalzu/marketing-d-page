@@ -8,7 +8,6 @@
 
 body{
     @include background-styles;
-  height: 100vh;
     }
 
 p{
@@ -22,4 +21,17 @@ img{
 }
 
 
-    
+.section__title{
+    text-align: center;
+    margin-block: 4rem;
+    font-size: 1.4rem;
+    margin-inline: 10vw;
+    color: $color-black;
+    span{
+        margin-bottom: .3rem;
+        display: block;
+        color: $color-primary;
+        font-size: 1rem;
+        }
+}
+

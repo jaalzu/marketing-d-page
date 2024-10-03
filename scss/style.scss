@@ -1,6 +1,8 @@
 @import '../scss/utils/variables';
 @import '../scss/utils/mixins';
 
+@import '../scss/components/buttons';
+
 @import '../scss/base/reset';
 @import '../scss/base/typography';
 
@@ -8,4 +10,4 @@
 @import '../scss/layout/nav';
 @import '../scss/layout/header';
 
-@import '../scss/components/buttons';
+@import '../scss/sections/services';

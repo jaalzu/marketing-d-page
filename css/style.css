@@ -1,3 +1,146 @@
+.btn {
+  padding: 0.8rem 1.4rem;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.1rem;
+  outline: none;
+  border-radius: 7px;
+  text-align: center;
+  position: relative;
+  transition: 0.4s ease;
+  overflow: hidden;
+  transition: 500ms ease all;
+  font-weight: 400;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  right: 110%;
+  width: 30px;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: rotate(20deg);
+}
+.btn.primary {
+  background: linear-gradient(to top, #390ae3, #5500d5, #6600c8, #7100bb, #7900af);
+  color: #FEF6FF;
+}
+.btn.primary:hover:before {
+  right: -50%;
+  transition: 1s ease all;
+}
+.btn.secondary {
+  font-weight: 700;
+  color: #1E1926;
+  border: 2px solid #1E1926;
+  transition: background-color 0.3s linear, color 0.3s linear;
+}
+.btn.secondary:hover {
+  color: #FEF6FF;
+  background: linear-gradient(to top, #390ae3, #5500d5, #6600c8, #7100bb, #7900af);
+}
+
+@media (min-width: 668px) and (max-width: 1024px) {
+  .btn.primary {
+    padding: 0.9rem 1.8rem;
+  }
+}
+@media (min-width: 1025px) {
+  .btn.primary {
+    padding: 1rem 1.9rem;
+  }
+  .btn.secondary {
+    padding: 0.6rem 1.1rem;
+  }
+}
+@media (min-width: 1600px) {
+  .btn.primary {
+    padding: 1rem 2.3rem;
+    font-size: 1.2rem;
+  }
+  .btn.secondary {
+    padding: 0.8rem 1.9rem;
+    font-size: 1rem;
+  }
+}
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  vertical-align: middle;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #390AE3;
+  border-radius: 1.625rem;
+}
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #FEF6FF;
+}
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #1E1926;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+button:hover .circle {
+  width: 100%;
+}
+button:hover .circle .icon.arrow {
+  background: #FEF6FF;
+  transform: translate(1rem, 0);
+}
+button:hover .button-text {
+  color: #FEF6FF;
+}
+
 * {
   list-style: none;
   text-decoration: none;
@@ -11,7 +154,6 @@ body {
   background-image: radial-gradient(circle at 34% 47%, hsla(237, 80%, 40%, 0.3) 4.47%, transparent 73.15%), radial-gradient(circle at 74% 20%, hsla(248, 100%, 63%, 0.3) 3.49%, transparent 63.7%);
   background-blend-mode: normal;
   background-repeat: no-repeat;
-  height: 100vh;
 }
 
 p {
@@ -22,6 +164,20 @@ img {
   display: block;
   width: 100%;
   height: 100%;
+}
+
+.section__title {
+  text-align: center;
+  margin-block: 4rem;
+  font-size: 1.4rem;
+  margin-inline: 10vw;
+  color: #1E1926;
+}
+.section__title span {
+  margin-bottom: 0.3rem;
+  display: block;
+  color: #390AE3;
+  font-size: 1rem;
 }
 
 h1, h2, h3 {
@@ -198,6 +354,7 @@ p, span, a {
 }
 .header {
   height: auto;
+  padding-bottom: 2rem;
 }
 .header .hero {
   display: flex;
@@ -282,13 +439,10 @@ p, span, a {
   }
   .header .hero .hero__description {
     text-align: center;
+    margin-inline: 20vw;
   }
   .header .hero .hero__description .hero__title {
     line-height: 1.2;
-    margin-inline: 20vw;
-  }
-  .header .hero .hero__description .hero__text {
-    margin-inline: 20vw;
   }
   .header .hero .hero__description .hero__text p {
     font-size: 1.02rem;
@@ -320,71 +474,81 @@ p, span, a {
     font-size: 1.1rem;
   }
 }
-.btn {
-  padding: 0.8rem 1.4rem;
-  display: inline-block;
-  cursor: pointer;
-  font-size: 1.1rem;
-  outline: none;
-  border-radius: 7px;
-  text-align: center;
-  position: relative;
-  transition: 0.4s ease;
-  overflow: hidden;
-  transition: 500ms ease all;
-  font-weight: 400;
+.services {
+  height: auto;
+  padding-bottom: 3rem;
 }
-.btn::before {
-  content: "";
-  position: absolute;
-  top: -40%;
-  right: 110%;
-  width: 30px;
-  height: 200%;
-  background: rgba(255, 255, 255, 0.3);
-  transform: rotate(20deg);
+.services .services__box {
+  display: flex;
+  flex-direction: column;
 }
-.btn.primary {
-  background: linear-gradient(to top, #390ae3, #5500d5, #6600c8, #7100bb, #7900af);
-  color: #FEF6FF;
+.services .services__box .services__img {
+  margin-bottom: 2rem;
 }
-.btn.primary:hover:before {
-  right: -50%;
-  transition: 1s ease all;
+.services .services__box .services__img img {
+  width: 100%;
 }
-.btn.secondary {
-  font-weight: 700;
-  color: #1E1926;
-  border: 2px solid #1E1926;
-  background: transparent;
-  transition: 0.2s ease;
+.services .services__box .services__description {
+  margin-inline: 5vw;
 }
-.btn.secondary:hover {
-  color: #FEF6FF;
-  background: linear-gradient(to top, #390ae3, #5500d5, #6600c8, #7100bb, #7900af);
+.services .services__box .services__description h3 {
+  color: #390AE3;
+  font-size: 1.6rem;
+  margin-bottom: 0.9rem;
+}
+.services .services__box .services__description p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.45;
+  margin-bottom: 1.2rem;
 }
 
 @media (min-width: 668px) and (max-width: 1024px) {
-  .btn.primary {
-    padding: 0.9rem 1.8rem;
+  .services .services__box .services__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .services .services__box .services__img img {
+    max-width: 60%;
+  }
+  .services .services__box .services__description {
+    margin-inline: 10vw;
+  }
+  .services .services__box .services__description h3 {
+    font-size: 1.7rem;
   }
 }
 @media (min-width: 1025px) {
-  .btn.primary {
-    padding: 1rem 1.9rem;
+  .services .services__box .services__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .btn.secondary {
-    padding: 0.6rem 1.1rem;
+  .services .services__box .services__img img {
+    max-width: 40%;
+  }
+  .services .services__box .services__description {
+    margin-inline: 25vw;
+  }
+  .services .services__box .services__description h3 {
+    font-size: 1.9rem;
+  }
+  .services .services__box .services__description p {
+    font-size: 1.06rem;
   }
 }
 @media (min-width: 1600px) {
-  .btn.primary {
-    padding: 1rem 2.3rem;
-    font-size: 1.2rem;
+  .services .services__box .services__img img {
+    width: 30%;
   }
-  .btn.secondary {
-    padding: 0.8rem 1.9rem;
-    font-size: 1rem;
+  .services .services__box .services__description {
+    margin-inline: 28vw;
+  }
+  .services .services__box .services__description h3 {
+    font-size: 2rem;
+  }
+  .services .services__box .services__description p {
+    font-size: 1.09rem;
   }
 }
 
