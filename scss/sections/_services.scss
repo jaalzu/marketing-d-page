@@ -1,75 +1,87 @@
 .services{
     height: auto;
-    padding-bottom: 3rem;
-    .services__box{
-        margin-block: 6rem;
-        .services__img{
-            margin-bottom: 2rem;
-            img{
-                width: 100%;
-            }
-        }
+    .services__grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-inline: 7vw;
 
-        .services__description{
-            margin-inline: 5vw;
-            h3{
-                text-align: center;
-                color: $color-primary;
-                font-size: 1.6rem;
-               margin-bottom: .9rem;
-            }
-            p{
-                font-family: $ff-secondary;
-                line-height: 1.450;
-                margin-bottom: 1.2rem;
-            }
-        }
-        }
-    }
-
-
-@include respond-to(tablet){
-    .services{
         .services__box{
+            margin-block: 2rem;
+            border: 1px solid rgb(253, 253, 253);
+            -webkit-box-shadow: 4px 7px 31px -15px rgba(0,0,0,0.82);
+-moz-box-shadow: 4px 7px 31px -15px rgba(0,0,0,0.82);
+box-shadow: 4px 7px 31px -12px rgba(0,0,0,0.82);
+            border-radius: 10px;
+            padding: 1.5rem;
             .services__img{
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                width: 100%;
+                margin-bottom: 1.5rem;
                 img{
-                    max-width: 60%;
+                    width: 220px;
                 }
             }
             .services__description{
-                margin-inline: 10vw;
-                h3{
-                    
-                    font-size: 1.7rem;
+                padding-right: 1rem;
+                    h3{
+                        color: $color-primary;
+                        font-size: clamp(1.5rem,1.3vw,1.8rem);
+                        margin-bottom: .7rem;
+                    }
+                    p{
+                        line-height: 1.5;
+                        margin-bottom: 1.5rem;
+
+                    }
+            }
+        }
+    }
+}
+
+
+@include respond-to(tablet) {
+    .services{
+        .services__grid{
+
+            .services__box{
+                .services__img{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        width: 350px;
+                        height: 250px;
+                    }
+                }
+                .services__description{
+                    text-align: center;
                 }
             }
         }
     }
 }
 
+
 @include respond-to(desktop){
     .services{
-        .services__box{
-            .services__img{
+        .services__grid{    
+            max-width: 1150px;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 1rem;
+            row-gap: 2rem;
+            .services__box{
                 display: flex;
-                align-items: center;
+                margin-block: 0rem;
+                flex-direction: column;
                 justify-content: center;
-                img{
-                    max-width: 40%;
-                }
-            }
-            .services__description{
-                margin-inline: 25vw;
-
-                h3{
-                    font-size: 1.8rem;
-                }
-                p{
-                    font-size: 1.040rem;
-                }
+                    .services__img{ 
+                        img{
+                            width: 250px;
+                            height: 180px;
+                        }
+                    }
             }
         }
     }
@@ -77,15 +89,15 @@
 
 @include respond-to(large-desktop){
     .services{
-        .services__box{
-            .services__img{
-                img{
-                    width: 30%;
+        .services__grid{
+            max-width: 1750px;
+            .services__box{
+                .services__img{
+                    img{
+                        width: 280px;
+                        height: 200px;
+                    }
                 }
-            }
-            .services__description{
-                margin-inline: 28vw;
-                
             }
         }
     }

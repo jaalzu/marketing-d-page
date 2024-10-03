@@ -17,6 +17,7 @@
         .hero__description{
             text-align: center;
             margin-inline: 2vw;
+
             .hero__title{
                 font-size: clamp(1.3rem,1.3vw,2.5rem);
                 margin-bottom: 1.3rem;
@@ -36,6 +37,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
                 .services__link{
                     font-size: 1rem;
                     color: $color-black;
@@ -67,13 +69,13 @@
             .hero__img{
                 margin-bottom: .5rem;
                 img{
-                    width: 70%;
+                    width: 500px;
                 }
             }
 
             .hero__description{
+                margin-inline: 10vw;
                 .hero__title{
-                    margin-inline: 3vw;
                 }
 
                 .hero__text{
@@ -96,26 +98,30 @@
 @include respond-to(desktop) {
     .header{
         .hero{
+            max-width: 1100px;
+            width: 100%;
             margin-top: 2rem;
+            margin-left: auto;
+            margin-right: auto;
 
             .hero__img{
                 img{
-                    width: 40%;
+                    width: 550px;
                 }
             }
 
             .hero__description{
                 text-align: center;
-                margin-inline: 20vw;
+                margin-inline: 15vw;
 
                 .hero__title{
                     line-height: 1.2;
                 }
 
                 .hero__text{
-                                p{
-                                    font-size: 1.020rem;
-                                }
+                              p{
+                                font-size: 1.020rem;
+                               }
                             }
 
                     .hero__buttons{
@@ -130,20 +136,10 @@
 @include respond-to(large-desktop) {
     .header{
         .hero{
-            .hero__img{
-                margin-top: 1rem;
-
-                img{
-                    width: 30%;
-                }
-            }
+            max-width: 1300px;
             .hero__description{
                 text-align: center;
-                .hero__title{
-                    margin-inline: 15vw;
-                }
-                .hero__text{
-                    margin-block: 2.5rem;
+                     .hero__text{
                     p{
                         font-size: 1.1rem;
                     }

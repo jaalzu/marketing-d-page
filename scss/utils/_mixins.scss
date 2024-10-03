@@ -9,6 +9,10 @@
     transition: $property $duration $ease;
   }
 
+
+
+
+
   @mixin respond-to($breakpoint) {
     @if $breakpoint == mobile {
       @media (max-width: 667px) { // Máximo para móviles
@@ -23,7 +27,7 @@
         @content;
       }
     } @else if $breakpoint == large-desktop {
-      @media (min-width: 1600px) { // Para pantallas grandes
+      @media (min-width: 1300px) { // Para pantallas grandes
         @content;
       }
     
