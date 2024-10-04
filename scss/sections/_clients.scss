@@ -1,36 +1,56 @@
 .clients{
     padding-bottom: 3rem;
     padding-inline: 5vw;
-    .clients__box{
-        
-    }
-
-
-
 
     .swiper {
-        width: 100%;
-        height: 100%;
-      }
-  
-      .swiper-slide {
-        background-color: #f6ebfa;
-        border-radius: 20px;
-        width: 100%;
-        height: 500px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        p{
+      width: 100%;
+      height: 100%;
+    
+      .swiper-wrapper {
+        .swiper-slide {
+          display: flex;
+          flex-direction: column; 
+          justify-content: center; 
+          align-items: center; 
+          background-color: #f6ebfa;
+          border-radius: 20px;
+          height: 50vh;
+          width: 100%;      
+          
+          p {
             text-align: center;
-        }
-
-        .client__name{
-            align-self: flex-end;
-            width: 100%;
-            
+            font-size: 2rem;
+            max-width: 80%;
+          }
+          
+          .client__name{
+            margin-top: 1.5rem;
+            font-size: 1.1rem;
+          }
         }
       }
-      
-}
+
+      .swiper-button-prev{
+        color: $color-black;
+      }
+
+      .swiper-button-next{
+        color: $color-black;
+      }
+    }
+  }    
+
+
+  @include respond-to(desktop){
+    .clients{
+    padding-inline: 20vw;
+
+      .swiper{
+        .swiper-wrapper{
+          .swiper-slide{
+
+          }
+        }
+      }
+    }
+  }
