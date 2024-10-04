@@ -8,10 +8,10 @@
 
 body{
     @include background-styles;
-    }
+}
 
 p{
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 img{
@@ -20,6 +20,9 @@ img{
     height: 100%;
 }
 
+section{
+    height: auto;
+}
 
 .section__title{
     text-align: center;
@@ -27,6 +30,7 @@ img{
     font-size: 1.7rem;
     margin-inline: 10vw;
     color: $color-black;
+    line-height: 1.2;
     span{
         margin-bottom: .3rem;
         display: block;
@@ -34,4 +38,3 @@ img{
         font-size: 1.2rem;
         }
 }
-

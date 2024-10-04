@@ -157,7 +157,7 @@ body {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 img {
@@ -166,12 +166,17 @@ img {
   height: 100%;
 }
 
+section {
+  height: auto;
+}
+
 .section__title {
   text-align: center;
   margin-block: 4rem;
   font-size: 1.7rem;
   margin-inline: 10vw;
   color: #1E1926;
+  line-height: 1.2;
 }
 .section__title span {
   margin-bottom: 0.3rem;
@@ -479,7 +484,7 @@ p, span, a {
   }
 }
 .services {
-  height: auto;
+  padding-bottom: 5rem;
 }
 .services .services__grid {
   display: grid;
@@ -558,6 +563,95 @@ p, span, a {
     width: 280px;
     height: 200px;
   }
+}
+.objetivos {
+  padding-bottom: 3rem;
+}
+.objetivos .objetivos__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  padding-inline: 5vw;
+  gap: 2rem;
+}
+.objetivos .objetivos__grid .objetivos__box {
+  background: linear-gradient(to top, #390ae3, #5500d5, #6600c8, #7100bb, #7900af);
+  padding: 1.8rem 1rem;
+}
+.objetivos .objetivos__grid .objetivos__box .objetivos__icon {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+.objetivos .objetivos__grid .objetivos__box .objetivos__icon img {
+  width: 4rem;
+}
+.objetivos .objetivos__grid .objetivos__box .objetivos__description {
+  color: #FEF6FF;
+}
+.objetivos .objetivos__grid .objetivos__box .objetivos__description span {
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+.objetivos .objetivos__grid .objetivos__box .objetivos__description p {
+  font-weight: 300;
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 1025px) {
+  .objetivos .objetivos__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .objetivos .objetivos__grid .objetivos__box:nth-child(3) {
+    grid-column: 1/-1;
+  }
+}
+@media (min-width: 1300px) {
+  .objetivos .objetivos__grid {
+    padding-inline: 1vw;
+    gap: 2rem;
+    max-width: 1550px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+  .objetivos .objetivos__grid .objetivos__box:nth-child(3) {
+    grid-column: auto;
+  }
+  .objetivos .objetivos__grid .objetivos__box {
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .objetivos .objetivos__grid .objetivos__box .objetivos__description span {
+    font-size: 1.65rem;
+  }
+}
+.clients {
+  padding-bottom: 3rem;
+  padding-inline: 5vw;
+}
+.clients .swiper {
+  width: 100%;
+  height: 100%;
+}
+.clients .swiper-slide {
+  background-color: #f6ebfa;
+  border-radius: 20px;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients .swiper-slide p {
+  text-align: center;
+}
+.clients .swiper-slide .client__name {
+  align-self: flex-end;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

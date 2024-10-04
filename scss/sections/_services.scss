@@ -1,5 +1,5 @@
 .services{
-    height: auto;
+    padding-bottom: 5rem;
     .services__grid{
         display: grid;
         grid-template-columns: 1fr;
@@ -12,28 +12,31 @@
             margin-block: 2rem;
             border: 1px solid rgb(253, 253, 253);
             -webkit-box-shadow: 4px 7px 31px -15px rgba(0,0,0,0.82);
--moz-box-shadow: 4px 7px 31px -15px rgba(0,0,0,0.82);
-box-shadow: 4px 7px 31px -12px rgba(0,0,0,0.82);
+            -moz-box-shadow: 4px 7px 31px -15px rgba(0,0,0,0.82);
+            box-shadow: 4px 7px 31px -12px rgba(0,0,0,0.82);
             border-radius: 10px;
             padding: 1.5rem;
+
             .services__img{
                 width: 100%;
                 margin-bottom: 1.5rem;
-                img{
-                    width: 220px;
-                }
-            }
+                    img{
+                        width: 220px;
+                    }
+             }
+
             .services__description{
                 padding-right: 1rem;
+
                     h3{
                         color: $color-primary;
                         font-size: clamp(1.5rem,1.3vw,1.8rem);
                         margin-bottom: .7rem;
                     }
+
                     p{
                         line-height: 1.5;
                         margin-bottom: 1.5rem;
-
                     }
             }
         }
@@ -44,19 +47,19 @@ box-shadow: 4px 7px 31px -12px rgba(0,0,0,0.82);
 @include respond-to(tablet) {
     .services{
         .services__grid{
-
             .services__box{
                 .services__img{
                     display: flex;
                     align-items: center;
                     justify-content: center;
+
                     img{
                         width: 350px;
                         height: 250px;
-                    }
+                       }
                 }
-                .services__description{
-                    text-align: center;
+                    .services__description{
+                        text-align: center;
                 }
             }
         }
