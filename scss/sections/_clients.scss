@@ -1,5 +1,4 @@
 .clients{
-    padding-bottom: 3rem;
     padding-inline: 5vw;
 
     .swiper {
@@ -43,14 +42,7 @@
 
   @include respond-to(desktop){
     .clients{
+  padding-top: 3rem;
     padding-inline: 20vw;
-
-      .swiper{
-        .swiper-wrapper{
-          .swiper-slide{
-
-          }
-        }
-      }
     }
   }

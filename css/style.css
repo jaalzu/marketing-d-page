@@ -631,7 +631,6 @@ p, span, a {
   }
 }
 .clients {
-  padding-bottom: 3rem;
   padding-inline: 5vw;
 }
 .clients .swiper {
@@ -666,6 +665,7 @@ p, span, a {
 
 @media (min-width: 1025px) {
   .clients {
+    padding-top: 3rem;
     padding-inline: 20vw;
   }
 }
