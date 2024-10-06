@@ -1,0 +1,145 @@
+.faq-contact{
+    height: auto;
+    
+    h3{
+        font-size: 2rem;
+        padding-top: 2rem;
+        text-align: center;
+    }
+
+    .faq__grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-block: 2rem;
+
+
+        .faq__container{
+        margin-inline: 5vw;
+        padding-bottom: 4rem;
+        
+            .faq__box{
+                border-bottom: 1px solid $color-black;
+                margin-block: 2.5rem;
+
+                    .accordion {
+                        background-color: transparent;
+                        cursor: pointer;
+                        width: 100%;
+                        text-align: left;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        transition: 0.4s;
+                        padding: 1rem;
+
+                        i{
+                            font-size: 1.7rem;
+                        }
+                        #faq-icon {
+                            transition: transform 0.4s ease; 
+                          }
+                        span{
+                            font-size: 1.9rem;
+                            font-weight: $fw-bold
+                        }
+                    }
+                    .panel {
+                        padding: 1rem 18px;
+                        margin-bottom: .7rem;
+                        background-color: $color-clients;
+                        display: none;
+                        border-radius: 4px;
+                        overflow: hidden;
+                    }
+                    
+                }            
+        }
+    }
+}
+
+
+@include respond-to(tablet){
+    .faq-contact{
+        .faq__grid{
+        margin-inline: 10vw;
+        }
+    }
+}
+
+
+
+.faq-contact{
+    .contact__container{
+        padding: 1rem;
+        background-color: $color-white;
+        margin-inline: 2vw;
+        border-radius: 10px;
+        span{
+            display: block;
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 1.6rem;
+            font-weight: $fw-bold;
+        }
+
+        form{
+            padding-top: 2rem;
+            display: flex;
+            flex-direction: column;
+
+            .input__box{
+                padding: 2rem 0;
+                width: 100%;
+
+                input{
+                    border: none;
+                    width: 90%;
+                    border-bottom: 1px solid $color-black;
+                    outline: none;
+                    background: transparent;
+                    padding-bottom: 1rem;
+                    font-size: 1.7rem;
+
+                    &::placeholder{
+                        color: $color-black;
+                    }
+                }
+
+            }
+            button{
+                margin-top: 1rem;
+                max-width: 30%;
+            }
+        }
+    }
+}
+
+
+@include respond-to(desktop){
+    .faq-contact{
+        padding-top: 3rem;
+        .faq__grid{
+            grid-template-columns: 1fr 1fr;
+
+            .faq__container{
+                margin-inline:2vw;
+            }
+        }
+        }
+    }
+
+
+    @include respond-to(large-desktop){
+        .faq-contact{
+            .faq__grid{
+                grid-template-columns: 1fr 1fr;
+                max-width: 1650px;
+                margin-left: auto;
+                margin-right: auto;
+                gap: 5rem;
+                .faq__container{
+                    margin-inline:2vw;
+                }
+            }
+            }
+    }
