@@ -149,6 +149,10 @@ button:hover .button-text {
   box-sizing: border-box;
 }
 
+.section-divider {
+  border: 1px solid #FEF6FF;
+}
+
 body {
   background-color: hsl(0, 0%, 100%);
   background-image: radial-gradient(circle at 34% 47%, hsla(237, 80%, 40%, 0.3) 4.47%, transparent 73.15%), radial-gradient(circle at 74% 20%, hsla(248, 100%, 63%, 0.3) 3.49%, transparent 63.7%);
@@ -483,6 +487,50 @@ p, span, a {
     font-size: 1.1rem;
   }
 }
+.footer {
+  background-color: #390AE3;
+  padding-top: 2rem;
+}
+.footer .footer__grid {
+  margin-inline: 5vw;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.footer .footer__grid .logo {
+  font-size: 2rem;
+  color: #FEF6FF;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.footer .footer__grid .menu-items ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.footer .footer__grid .menu-items ul li a {
+  color: #FEF6FF;
+  font-size: 1.8rem;
+}
+.footer .footer__grid .footer__social {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.footer .footer__grid .footer__social ul {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer__grid .footer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  color: #FEF6FF;
+  padding-bottom: 1rem;
+}
+
 .services {
   padding-bottom: 5rem;
 }
@@ -709,12 +757,13 @@ p, span, a {
   transition: transform 0.4s ease;
 }
 .faq-contact .faq__grid .faq__container .faq__box .accordion span {
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   font-weight: 700;
 }
 .faq-contact .faq__grid .faq__container .faq__box .panel {
   padding: 1rem 18px;
   margin-bottom: 0.7rem;
+  background-color: #FEF6FF;
   display: none;
   border-radius: 4px;
   overflow: hidden;
@@ -786,6 +835,34 @@ p, span, a {
   .faq-contact .faq__grid .faq__container {
     margin-inline: 2vw;
   }
+}
+.cta__final {
+  background-color: #390AE3;
+  height: auto;
+  padding-bottom: 5rem;
+  overflow: hidden;
+}
+.cta__final .cta__grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.cta__final .cta__grid h3 {
+  margin-top: 6rem;
+  font-size: 1.8rem;
+  color: #FEF6FF;
+  margin-bottom: 2rem;
+  max-width: 90%;
+}
+.cta__final .cta__grid button {
+  border: 1px solid white;
+  padding: 1rem 3rem;
+  margin-bottom: 3rem;
+}
+.cta__final .cta__grid img {
+  width: 420px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+.cta__final{
+    background-color: $color-primary;
+    height: auto;
+    padding-bottom: 5rem;
+    overflow: hidden;
+    .cta__grid{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+
+        h3{
+            margin-top: 6rem;
+            font-size: 1.8rem;
+            color: $color-white;
+            margin-bottom: 2rem;
+            max-width: 90%;
+        }
+        button{
+            border: 1px solid white;
+            padding: 1rem 3rem;
+            margin-bottom: 3rem;
+        }
+
+        img{
+            width: 420px;
+        }
+    }
+}
