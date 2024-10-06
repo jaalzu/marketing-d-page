@@ -632,6 +632,7 @@ p, span, a {
 }
 .clients {
   padding-inline: 5vw;
+  padding-bottom: 3rem;
 }
 .clients .swiper {
   width: 100%;
@@ -667,6 +668,123 @@ p, span, a {
   .clients {
     padding-top: 3rem;
     padding-inline: 20vw;
+  }
+}
+.faq-contact {
+  height: auto;
+}
+.faq-contact h3 {
+  font-size: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+.faq-contact .faq__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-block: 2rem;
+}
+.faq-contact .faq__grid .faq__container {
+  margin-inline: 5vw;
+  padding-bottom: 4rem;
+}
+.faq-contact .faq__grid .faq__container .faq__box {
+  border-bottom: 1px solid #1E1926;
+  margin-block: 2.5rem;
+}
+.faq-contact .faq__grid .faq__container .faq__box .accordion {
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.4s;
+  padding: 1rem;
+}
+.faq-contact .faq__grid .faq__container .faq__box .accordion i {
+  font-size: 1.7rem;
+}
+.faq-contact .faq__grid .faq__container .faq__box .accordion #faq-icon {
+  transition: transform 0.4s ease;
+}
+.faq-contact .faq__grid .faq__container .faq__box .accordion span {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+.faq-contact .faq__grid .faq__container .faq__box .panel {
+  padding: 1rem 18px;
+  margin-bottom: 0.7rem;
+  display: none;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+@media (min-width: 668px) and (max-width: 1024px) {
+  .faq-contact .faq__grid {
+    margin-inline: 10vw;
+  }
+}
+.faq-contact .contact__container {
+  padding: 1rem;
+  background-color: #FEF6FF;
+  margin-inline: 2vw;
+  border-radius: 10px;
+}
+.faq-contact .contact__container span {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.faq-contact .contact__container form {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.faq-contact .contact__container form .input__box {
+  padding: 2rem 0;
+  width: 100%;
+}
+.faq-contact .contact__container form .input__box input {
+  border: none;
+  width: 90%;
+  border-bottom: 1px solid #1E1926;
+  outline: none;
+  background: transparent;
+  padding-bottom: 1rem;
+  font-size: 1.7rem;
+}
+.faq-contact .contact__container form .input__box input::placeholder {
+  color: #1E1926;
+}
+.faq-contact .contact__container form button {
+  margin-top: 1rem;
+  max-width: 30%;
+}
+
+@media (min-width: 1025px) {
+  .faq-contact {
+    padding-top: 3rem;
+  }
+  .faq-contact .faq__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .faq-contact .faq__grid .faq__container {
+    margin-inline: 2vw;
+  }
+}
+@media (min-width: 1300px) {
+  .faq-contact .faq__grid {
+    grid-template-columns: 1fr 1fr;
+    max-width: 1650px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 5rem;
+  }
+  .faq-contact .faq__grid .faq__container {
+    margin-inline: 2vw;
   }
 }
 
