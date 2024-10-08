@@ -596,7 +596,7 @@ p, span, a, button {
     max-width: 1300px;
   }
   .header .hero .hero__img img {
-    width: 75%;
+    width: 60%;
   }
   .header .hero .hero__description {
     text-align: center;
