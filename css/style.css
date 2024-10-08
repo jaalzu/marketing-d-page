@@ -43,7 +43,7 @@
 
 #ninth > button {
   transition: all 0.5s ease-in-out;
-  border: 1px solid #1E1926;
+  border: 2px solid #1E1926;
   border-radius: 8px;
   padding: 1rem 0;
   font-size: 1.2rem;
@@ -818,7 +818,7 @@ p, span, a, button {
   font-weight: 700;
 }
 .objetivos .objetivos__grid .objetivos__box .objetivos__description p {
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 1rem;
   line-height: 1.5;
 }
@@ -986,7 +986,7 @@ p, span, a, button {
 .faq-contact .contact__container form .input__box input {
   border: none;
   width: 90%;
-  border-bottom: 1px solid #1E1926;
+  border-bottom: 2px solid #1E1926;
   outline: none;
   background: transparent;
   padding-bottom: 1rem;
@@ -1002,7 +1002,7 @@ p, span, a, button {
   width: 90%;
   height: 150px;
   background: transparent;
-  border: 1px solid #1E1926;
+  border: 2px solid #1E1926;
   border-radius: 5px;
   font-size: 1.5rem;
   font-family: "Open Sans", sans-serif;
