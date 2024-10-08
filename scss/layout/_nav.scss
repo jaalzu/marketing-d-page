@@ -179,15 +179,18 @@
 
 
            .nav__social{
-               display: block;
+               display: inline-flex;
+               align-items: center;
+               justify-content: center;
                ul{
-    display: grid;
-    position: absolute;
-    right: 3%;
-    grid-template-columns: 1fr 1fr;                
+                    display: flex;
+                    position: absolute;
+                    right: 5%;
+                    top: 4%;
+                    gap: 4rem;
                 li{
                     img{
-                        width: 33%;
+                        width: 40px;
                     }
                 }
             }

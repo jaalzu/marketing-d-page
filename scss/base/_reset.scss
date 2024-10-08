@@ -5,15 +5,20 @@
     margin: 0;
     box-sizing: border-box;
 }
-.section-divider {
-    border: 1px solid $color-white;    
-  }
 
-  
 
 body{
     @include background-styles;
 }
+
+
+.section-divider {
+    border: 1px solid $color-white;    
+  }
+  
+  
+  
+
 
 p{
     font-size: 1.1rem;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JAVALZU | Marketing Digital</title>
 
     <!-- google fonts start -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,14 +17,14 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <header class="header" id="header">
-    <nav id="nav">
+  <header class="header" id="header" role="heading">
+    <nav id="nav" role="navigation">
         <div class="navbar">
           <div class="container nav-container">
               <div class="logo">
                 <span>JAVALZU</span>
               </div>
-              <input class="checkbox" type="checkbox" name="" id="" />
+              <input class="checkbox" type="checkbox"/>
               <div class="hamburger-lines">
                 <span class="line line1"></span>
                 <span class="line line2"></span>
@@ -42,10 +42,10 @@
             <div class="nav__social">
               <ul>
                 <li>
-                  <a href=""><img src="public/imagenes/svg/instagram-brands-solid (1).svg" alt=""></a>
+                  <a href=""><img src="/public/imagenes/svg/Instagram_icon-icons.com_66804.svg" alt=""></a>
                 </li>
                 <li>
-                  <a href=""><img src="public/imagenes/svg/whatsapp-brands-solid.svg" alt=""></a>
+                  <a href=""><img src="/public/imagenes/svg/whatsapp_icon-icons.com_62756.svg" alt=""></a>
                 </li>
               </ul>
             </div>
@@ -296,22 +296,22 @@
   <div class="contact__container">
       <p>Deposita tus dudas o consultas! </p>
       <i class="fa-solid fa-arrow-down"></i>
-      <form action="#">
+      <form action="https://formspree.io/f/xnnqaorg"
+      method="POST" id="my-form">
         <div class="input__box">
-          <label for="name">
-            <input type="text" for="name" id="name" placeholder="Nombre" required>
+          <label for="name" class="sr-only">Nombre</label>
+            <input type="text"  id="name" placeholder="Nombre" required>
           </div>
           <div class="input__box">
-            <label for="email">
-              <input type="email" for="email" id="email" placeholder="Email" required>
+            <label for="email" class="sr-only">Email</label>
+              <input type="email"  id="email" placeholder="Email" required>
             </div>
-              <label for="message">
+            <label for="message" class="sr-only">Mensaje</label>
                 <textarea name="message" id="message" placeholder="Deja tu mensaje!" required></textarea>
-              <button type="submit" class="btn secondary">Enviar consulta</button>
-               
-             
+                <button type="submit" class="btn secondary">Enviar consulta</button>
       </form>
-  </div>
+      <div id="thank-you-message" style="display:none;">¡Gracias por tu consulta! Nos pondremos en contacto contigo pronto.</div>
+    </div>
   </div>
 </section>
 
@@ -352,10 +352,10 @@
     <div class="footer__social">
       <ul>
         <li>
-          <a href=""><img src="public/imagenes/svg/instagram-brands-solid (1).svg" alt=""></a>
+          <a href=""><img src="/public/imagenes/svg/Instagram_icon-icons.com_66804.svg" alt=""></a>
         </li>
         <li>
-          <a href=""><img src="public/imagenes/svg/whatsapp-brands-solid.svg" alt=""></a>
+          <a href=""><img src="/public/imagenes/svg/whatsapp_icon-icons.com_62756.svg" alt=""></a>
         </li>
       </ul>
     </div>
@@ -366,8 +366,13 @@
   </div>
 </footer>
 
+<a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
+  <img src="/public/imagenes/icons8-whatsapp.svg" alt="">
+</a>
 
 
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="script/script.js"></script>
 </body>

@@ -41,6 +41,19 @@
   background: linear-gradient(to top, #390ae3, #5500d5, #6600c8, #7100bb, #7900af);
 }
 
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-button img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
 @media (min-width: 668px) and (max-width: 1024px) {
   .btn.primary {
     padding: 0.9rem 1.8rem;
@@ -228,15 +241,15 @@ button:hover .button-text {
   box-sizing: border-box;
 }
 
-.section-divider {
-  border: 1px solid #FEF6FF;
-}
-
 body {
   background-color: hsl(0, 0%, 100%);
   background-image: radial-gradient(circle at 34% 47%, hsla(237, 80%, 40%, 0.3) 4.47%, transparent 73.15%), radial-gradient(circle at 74% 20%, hsla(248, 100%, 63%, 0.3) 3.49%, transparent 63.7%);
   background-blend-mode: normal;
   background-repeat: no-repeat;
+}
+
+.section-divider {
+  border: 1px solid #FEF6FF;
 }
 
 p {
@@ -433,16 +446,19 @@ p, span, a {
     display: none;
   }
   .navbar .nav-container .nav__social {
-    display: block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
   .navbar .nav-container .nav__social ul {
-    display: grid;
+    display: flex;
     position: absolute;
-    right: 3%;
-    grid-template-columns: 1fr 1fr;
+    right: 5%;
+    top: 4%;
+    gap: 4rem;
   }
   .navbar .nav-container .nav__social ul li img {
-    width: 33%;
+    width: 40px;
   }
 }
 .header {
@@ -655,7 +671,7 @@ p, span, a {
   }
 }
 .services {
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 }
 .services .services__grid {
   display: grid;
@@ -918,6 +934,16 @@ p, span, a {
   display: flex;
   flex-direction: column;
 }
+.faq-contact .contact__container form .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 .faq-contact .contact__container form .input__box {
   padding: 2rem 0;
   width: 100%;
@@ -947,11 +973,14 @@ p, span, a {
   font-family: "Open Sans", sans-serif;
   outline: #390AE3;
   padding: 0.5rem;
+  resize: none;
 }
 .faq-contact .contact__container form textarea::placeholder {
   color: #1E1926;
 }
 .faq-contact .contact__container form button {
+  width: min(45%, 200px);
+  font-size: 1rem;
   margin-top: 1.3rem;
 }
 
@@ -962,6 +991,9 @@ p, span, a {
   .faq-contact .contact__container textarea {
     margin-left: auto;
     margin-right: auto;
+  }
+  .faq-contact .contact__container button {
+    margin-left: 2.5rem;
   }
 }
 @media (min-width: 1025px) {
