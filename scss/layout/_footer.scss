@@ -1,6 +1,6 @@
 .footer{
     background-color: $color-primary;
-    padding-top: 2rem;
+    padding-top: 3rem;
     .footer__grid{
         margin-inline: 5vw;
         display: grid;
@@ -41,7 +41,7 @@
                 justify-content: center;
 
                 img{
-                    max-width: 40px;
+                    max-width: 45px;
                 }
             }
         }

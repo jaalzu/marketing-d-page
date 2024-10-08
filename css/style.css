@@ -305,9 +305,10 @@ p, span, a {
 }
 .navbar .menu-items ul {
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .navbar .menu-items ul li {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 .navbar .menu-items ul li a {
   color: #1E1926;
@@ -406,7 +407,7 @@ p, span, a {
     margin-top: 1.5rem;
   }
   .navbar .nav-container .menu-items {
-    transform: translateY(0%);
+    transform: translateY(20%);
     margin-right: 4rem;
     backdrop-filter: none;
     margin-top: 2rem;
@@ -423,7 +424,7 @@ p, span, a {
     margin-bottom: 0;
   }
   .navbar .nav-container .menu-items ul li a {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .navbar .nav-container .checkbox {
     display: none;
@@ -444,18 +445,13 @@ p, span, a {
     width: 33%;
   }
 }
-@media (min-width: 1300px) {
-  .navbar .nav-container .menu-items ul li a {
-    font-size: 1.2rem;
-  }
-}
 .header {
   height: auto;
-  padding-bottom: 2rem;
+  overflow: hidden;
 }
 .header .hero {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 .header .hero .hero__img {
   display: flex;
@@ -463,32 +459,35 @@ p, span, a {
   justify-content: center;
 }
 .header .hero .hero__img img {
-  max-width: 100%;
+  width: 550px;
 }
 .header .hero .hero__description {
   text-align: center;
-  margin-inline: 2vw;
+  margin-inline: 5vw;
+  margin-top: 2rem;
 }
 .header .hero .hero__description .hero__title {
-  font-size: clamp(1.3rem, 1.3vw, 2.5rem);
+  font-size: clamp(1.5rem, 1.5vw, 2.5rem);
   margin-bottom: 1.3rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 .header .hero .hero__description .hero__text {
-  margin-inline: 3vw;
-  margin-bottom: 2rem;
+  margin-inline: 5vw;
+  margin-bottom: 3rem;
 }
 .header .hero .hero__description .hero__text p {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
 .header .hero .hero__description .hero__buttons {
-  gap: 0.8rem;
+  margin-bottom: 2rem;
+  gap: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .header .hero .hero__description .hero__buttons .services__link {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #1E1926;
   display: inline-flex;
   align-items: center;
@@ -508,6 +507,9 @@ p, span, a {
 }
 
 @media (min-width: 668px) and (max-width: 1024px) {
+  .header .hero {
+    margin-top: 1rem;
+  }
   .header .hero .hero__img {
     margin-bottom: 0.5rem;
   }
@@ -515,13 +517,10 @@ p, span, a {
     width: 500px;
   }
   .header .hero .hero__description {
-    margin-inline: 10vw;
+    margin-inline: 15vw;
   }
   .header .hero .hero__description .hero__text {
     text-align: center;
-  }
-  .header .hero .hero__description .hero__text p {
-    font-size: 1.05rem;
   }
   .header .hero .hero__description .hero__buttons {
     gap: 1.7rem;
@@ -531,12 +530,12 @@ p, span, a {
   .header .hero {
     max-width: 1100px;
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-left: auto;
     margin-right: auto;
   }
   .header .hero .hero__img img {
-    width: 550px;
+    width: 700px;
   }
   .header .hero .hero__description {
     text-align: center;
@@ -556,6 +555,9 @@ p, span, a {
   .header .hero {
     max-width: 1300px;
   }
+  .header .hero .hero__img img {
+    width: 750px;
+  }
   .header .hero .hero__description {
     text-align: center;
   }
@@ -568,7 +570,7 @@ p, span, a {
 }
 .footer {
   background-color: #390AE3;
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 .footer .footer__grid {
   margin-inline: 5vw;
@@ -605,7 +607,7 @@ p, span, a {
   justify-content: center;
 }
 .footer .footer__grid .footer__social ul img {
-  max-width: 40px;
+  max-width: 45px;
 }
 .footer .footer__info {
   display: flex;
@@ -801,7 +803,7 @@ p, span, a {
 }
 .clients {
   padding-inline: 5vw;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
 }
 .clients .swiper {
   width: 100%;
@@ -820,7 +822,7 @@ p, span, a {
 .clients .swiper .swiper-wrapper .swiper-slide p {
   text-align: center;
   font-size: 2rem;
-  max-width: 80%;
+  max-width: 75%;
 }
 .clients .swiper .swiper-wrapper .swiper-slide .client__name {
   margin-top: 1.5rem;
@@ -847,7 +849,6 @@ p, span, a {
   font-size: 2rem;
   padding-top: 2rem;
   font-weight: 700;
-  text-align: center;
 }
 .faq-contact .faq__grid {
   display: grid;
@@ -863,21 +864,17 @@ p, span, a {
   margin-block: 2.5rem;
 }
 .faq-contact .faq__grid .faq__container .faq__box .accordion {
-  background-color: transparent;
   cursor: pointer;
   width: 100%;
   text-align: left;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: 0.4s;
   padding: 1rem;
 }
 .faq-contact .faq__grid .faq__container .faq__box .accordion i {
   font-size: 1.7rem;
-}
-.faq-contact .faq__grid .faq__container .faq__box .accordion #faq-icon {
-  transition: transform 0.4s ease;
+  margin-top: 1.5rem;
 }
 .faq-contact .faq__grid .faq__container .faq__box .accordion span {
   font-size: 1.7rem;
@@ -1006,7 +1003,7 @@ p, span, a {
 .cta__final {
   background-color: #390AE3;
   height: auto;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
   overflow: hidden;
 }
 .cta__final .cta__grid {
