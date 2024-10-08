@@ -73,7 +73,6 @@ button {
   background: transparent;
   padding: 0;
   font-size: inherit;
-  font-family: inherit;
 }
 button.learn-more {
   width: 12rem;
@@ -720,10 +719,12 @@ p, span, a {
 }
 .faq-contact {
   height: auto;
+  padding-block: 3rem;
 }
-.faq-contact h3 {
+.faq-contact span {
   font-size: 2rem;
   padding-top: 2rem;
+  font-weight: 700;
   text-align: center;
 }
 .faq-contact .faq__grid {
@@ -771,7 +772,7 @@ p, span, a {
 
 @media (min-width: 668px) and (max-width: 1024px) {
   .faq-contact .faq__grid {
-    margin-inline: 10vw;
+    margin-inline: 5vw;
   }
 }
 .faq-contact .contact__container {
@@ -780,15 +781,21 @@ p, span, a {
   margin-inline: 2vw;
   border-radius: 10px;
 }
-.faq-contact .contact__container span {
+.faq-contact .contact__container p {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+  padding-top: 1rem;
+}
+.faq-contact .contact__container i {
+  font-size: 1.5rem;
   display: block;
   text-align: center;
-  margin-top: 1rem;
-  font-size: 1.6rem;
-  font-weight: 700;
 }
 .faq-contact .contact__container form {
   padding-top: 2rem;
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
 }
@@ -803,30 +810,68 @@ p, span, a {
   outline: none;
   background: transparent;
   padding-bottom: 1rem;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.7rem;
 }
 .faq-contact .contact__container form .input__box input::placeholder {
   color: #1E1926;
 }
+.faq-contact .contact__container form textarea {
+  display: block;
+  margin-block: 1rem;
+  width: 90%;
+  height: 150px;
+  background: transparent;
+  border: 1px solid #1E1926;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  outline: #390AE3;
+  padding: 0.5rem;
+}
+.faq-contact .contact__container form textarea::placeholder {
+  color: #1E1926;
+}
 .faq-contact .contact__container form button {
-  margin-top: 1rem;
-  max-width: 30%;
+  margin-top: 1.3rem;
 }
 
-@media (min-width: 1025px) {
-  .faq-contact {
-    padding-top: 3rem;
+@media (min-width: 668px) and (max-width: 1024px) {
+  .faq-contact .contact__container form {
+    text-align: center;
   }
+  .faq-contact .contact__container textarea {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1025px) {
   .faq-contact .faq__grid {
     grid-template-columns: 1fr 1fr;
   }
   .faq-contact .faq__grid .faq__container {
     margin-inline: 2vw;
   }
+  .faq-contact .faq__grid .contact__container {
+    height: 730px;
+  }
+  .faq-contact .faq__grid .contact__container p {
+    margin-top: 1rem;
+  }
+  .faq-contact .faq__grid .contact__container form {
+    padding-top: 1.5rem;
+    margin-inline: 1rem;
+  }
+  .faq-contact .faq__grid .contact__container form .input__box input {
+    width: 100%;
+  }
+  .faq-contact .faq__grid .contact__container form textarea {
+    width: 100%;
+    margin-block: 2rem;
+  }
 }
 @media (min-width: 1300px) {
   .faq-contact .faq__grid {
-    grid-template-columns: 1fr 1fr;
     max-width: 1650px;
     margin-left: auto;
     margin-right: auto;

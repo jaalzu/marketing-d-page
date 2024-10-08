@@ -1,9 +1,10 @@
 .faq-contact{
     height: auto;
-    
-    h3{
+    padding-block: 3rem;
+    span{
         font-size: 2rem;
         padding-top: 2rem;
+        font-weight: $fw-bold;
         text-align: center;
     }
 
@@ -61,7 +62,7 @@
 @include respond-to(tablet){
     .faq-contact{
         .faq__grid{
-        margin-inline: 10vw;
+        margin-inline: 5vw;
         }
     }
 }
@@ -74,16 +75,23 @@
         background-color: $color-white;
         margin-inline: 2vw;
         border-radius: 10px;
-        span{
+
+        p{
+            font-size: 1.6rem;
+            text-align: center;
+            margin-bottom: .8rem;
+            font-weight: $fw-bold;
+            padding-top: 1rem;
+        }
+        i{
+            font-size: 1.5rem;
             display: block;
             text-align: center;
-            margin-top: 1rem;
-            font-size: 1.6rem;
-            font-weight: $fw-bold;
         }
 
         form{
             padding-top: 2rem;
+            padding-bottom: 2rem;
             display: flex;
             flex-direction: column;
 
@@ -98,6 +106,7 @@
                     outline: none;
                     background: transparent;
                     padding-bottom: 1rem;
+                    font-family: $ff-secondary;
                     font-size: 1.7rem;
 
                     &::placeholder{
@@ -106,9 +115,43 @@
                 }
 
             }
+
+            textarea{
+                display: block;
+                margin-block: 1rem;
+                width: 90%;
+                height: 150px;
+                background: transparent;
+                border: 1px solid $color-black;
+                border-radius: 5px;
+                font-size: 1.5rem;
+                font-family: $ff-secondary;
+                outline: $color-primary;
+                padding: .5rem;
+
+                &::placeholder{
+                    color: $color-black;
+                }
+            }
+
             button{
-                margin-top: 1rem;
-                max-width: 30%;
+                margin-top: 1.3rem;
+                
+            }
+        }
+    }
+}
+
+
+@include respond-to(tablet){
+    .faq-contact{
+        .contact__container{
+            form{
+               text-align: center;
+            }
+            textarea{
+                margin-left: auto;
+                margin-right: auto;
             }
         }
     }
@@ -117,13 +160,33 @@
 
 @include respond-to(desktop){
     .faq-contact{
-        padding-top: 3rem;
         .faq__grid{
             grid-template-columns: 1fr 1fr;
 
             .faq__container{
                 margin-inline:2vw;
             }
+
+
+        .contact__container{
+            height: 730px;
+            p{
+                margin-top: 1rem;
+            }
+            form{
+                padding-top: 1.5rem;
+                margin-inline: 1rem;
+                .input__box{
+                    input{
+                        width: 100%;
+                    }
+                }
+                textarea{
+                    width: 100%;
+                    margin-block: 2rem;
+                }
+            }
+        }
         }
         }
     }
@@ -132,7 +195,6 @@
     @include respond-to(large-desktop){
         .faq-contact{
             .faq__grid{
-                grid-template-columns: 1fr 1fr;
                 max-width: 1650px;
                 margin-left: auto;
                 margin-right: auto;
@@ -140,6 +202,6 @@
                 .faq__container{
                     margin-inline:2vw;
                 }
-            }
+              }
             }
     }
