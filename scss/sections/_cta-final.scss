@@ -12,19 +12,31 @@
 
         h3{
             margin-top: 6rem;
-            font-size: 1.8rem;
+            font-size: 2.3rem;
             color: $color-white;
-            margin-bottom: 2rem;
-            max-width: 90%;
-        }
-        button{
-            border: 1px solid white;
-            padding: 1rem 3rem;
             margin-bottom: 3rem;
+            max-width: 500px;
         }
+        
 
         img{
-            width: 420px;
+            width: 450px;
         }
     }
 }
+
+
+@include respond-to(desktop){
+    .cta__final{
+        padding-bottom: 2rem;
+        .cta__grid{
+            h3{
+                font-size: 2.5rem;
+            }
+            img{
+                width: 550px;
+            }
+        }
+    }
+}
+
