@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JAVALZU | Marketing Digital</title>
 
+    <!-- Meta etiquetas para SEO -->
+
+    <meta name="description" content="Potencia tu negocio en línea con nuestros servicios de marketing digital. Ofrecemos estrategias personalizadas y efectivas en SEO, redes sociales y publicidad digital para maximizar tu visibilidad y atraer más clientes. ¡Descubre cómo transformar tu presencia digital hoy!">
+    <meta name="keywords" content="marketing digital, SEO, redes sociales, publicidad, estrategias digitales, diseño web">
+    <meta name="author" content="Javier Alzu">
+    <link rel="canonical" href="https://jaalzu.github.io/marketing-d-page/">
+
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="JAVALZU | Marketing Digital">
+    <meta property="og:description" content="Transforma tu negocio en línea con nuestros servicios de marketing digital. Te ofrecemos estrategias personalizadas y efectivas en SEO, redes sociales y publicidad digital para maximizar tu presencia y atraer más clientes. ¡Conéctate con nosotros hoy!">
+    <meta property="og:image" content="https://jaalzu.github.io/marketing-d-page/public/imagenes/hero/hero-img.webp">
+    <meta property="og:url" content="https://jaalzu.github.io/marketing-d-page/">
+    <meta property="og:type" content="website">
+
     <!-- google fonts start -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,11 +26,11 @@
     <!-- google fonts end -->
 
      <!-- font awesome start -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'" />
     <!-- font awesome end  -->
 
      <!-- swiper js start -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" media="print" onload="this.media='all'"/>
      <!-- swiper js end -->
 
   <!-- link to css  -->
@@ -35,12 +49,14 @@
               <div class="logo">
                 <span>JAVALZU</span>
               </div>
-              <input class="checkbox" type="checkbox"/>
-              <div class="hamburger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-              </div>  
+              <input class="checkbox" id="menu-toggle" type="checkbox"/>
+              <label for="menu-toggle" class="hamburger">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+            </label>
             <div class="menu-items">
                 <ul>
                     <li><a href="#header">Inicio</a></li>
@@ -325,9 +341,8 @@
             <label for="email" class="sr-only">Correo electrónico</label>
               <input type="email"  id="email" placeholder="Correo electrónico" required>
             </div>
-            <label for="message" class="sr-only">Tu mensaje o consulta</label>
+              <label for="message" class="sr-only">Tu mensaje o consulta</label>
                 <textarea name="message" id="message" placeholder="Deja tu mensaje!" required></textarea>
-                <!-- <button type="submit" class="btn secondary">Enviar consulta</button> -->
                 <div id="ninth" class="buttonBox">
                   <button type="submit">Enviar consulta</button>
                 </div>
@@ -397,14 +412,14 @@
 <!-- footer section end -->
 
 <!-- whatsapp button  -->
-<a href="" class="whatsapp-button" target="_blank">
-  <img src="public/imagenes/icons8-whatsapp.svg" alt="" loading="lazy">
+<a href="#contact" class="whatsapp-button" target="_blank">
+  <img src="public/imagenes/icons8-whatsapp.svg" alt="Icono de Whatsapp" loading="lazy">
 </a>
 
 
 
 <!-- script sweet alert  -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" ></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
 <!-- script swiper js  -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" ></script>
 <!-- script to js  -->
