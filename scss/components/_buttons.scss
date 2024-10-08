@@ -48,17 +48,39 @@
         }
 }
 
+// form button 
+
+#ninth>button{
+  transition:all .5s ease-in-out;
+  border: 1px solid $color-black;
+  border-radius: 8px;
+  padding: 1rem 0;
+  font-size:1.2rem;
+  margin-top: 1.3rem;
+}
+
+#ninth:hover button{
+  background:$color-primary;
+  color:white;
+}
+
+
+// whatsapp button 
 
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 1000;
+  cursor: pointer;
+  &:hover{
+    opacity: .7;
+  }
 }
 
 .whatsapp-button img {
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
 }
 

@@ -27,6 +27,10 @@
                 li a{
                     color: $color-white;
                     font-size: 1.8rem;
+
+                    &:hover{
+                        opacity: .7;
+                    }
                 }
             }
         }
@@ -34,6 +38,7 @@
         .footer__social{
             margin-top: 3rem;
             margin-bottom: 3rem;
+
             ul{
                 display: flex;
                 gap: 4rem;
@@ -42,6 +47,10 @@
 
                 img{
                     max-width: 45px;
+
+                    &:hover{
+                        opacity: .7;
+                    }
                 }
             }
         }
@@ -54,12 +63,16 @@
         gap: 1.5rem;
         color: $color-white;
         padding-bottom: 1rem;
+        a{
+        color: $color-white;
+        }
     }
 }
 
 
 @include respond-to(desktop){
     .footer{
+
         .footer__grid{
             grid-template-columns: 1fr 1fr 1fr;
             align-items: center;
@@ -79,9 +92,11 @@
 
             }
             .menu-items{
+
                 ul{
                     flex-direction: row;
                     gap: 1.5rem;
+
                     li a{
                         font-size: 1.5rem;
                     }
@@ -98,7 +113,7 @@
             flex-direction: row;
             justify-content: space-between;
             margin-top: 3rem;
-            margin-inline: 2vw;
+            margin-inline: 5vw;
             font-size: 1.2rem;
         }
     }

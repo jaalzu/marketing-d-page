@@ -12,6 +12,7 @@
                 background: $gradient-primary;
                 padding: 1.8rem 1rem;
                 border-radius: 5px;
+
                 .objetivos__icon{
                     display: flex;
                     justify-content: flex-start;
@@ -20,15 +21,17 @@
                         width: 4rem;
                     }
                 }
+
                 .objetivos__description{
                     color: $color-white;
-                    span{
+
+                    h3{
                         font-size: 1.550rem;
                         font-weight: $fw-bold;
                     }
+
                     p{
                         font-weight: $fw-light;
-
                         margin-top: 1rem;
                         line-height: 1.5;
                     }
@@ -43,6 +46,7 @@
         .objetivos__grid{
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
+            
             .objetivos__box:nth-child(3){
                 grid-column: 1 / -1; 
             }
@@ -69,7 +73,7 @@
                 flex-direction: column;
                 .objetivos__description{
 
-                    span{
+                    h3{
                         font-size: 1.650rem;
                     }
                 }

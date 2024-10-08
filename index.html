@@ -10,14 +10,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans&display=swap" rel="stylesheet">
     <!-- google fonts end -->
+
+     <!-- font awesome start -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome end  -->
+
+     <!-- swiper js start -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+     <!-- swiper js end -->
 
-
+  <!-- link to css  -->
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
-  <header class="header" id="header" role="heading">
+
+<!-- header start -->
+
+  <header class="header" id="header" role="banner">
+    <!-- navbar start -->
     <nav id="nav" role="navigation">
         <div class="navbar">
           <div class="container nav-container">
@@ -32,31 +43,34 @@
               </div>  
             <div class="menu-items">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Clientes</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#header">Inicio</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#objetivos">Nosotros</a></li>
+                    <li><a href="#clients">Clientes</a></li>
+                    <li><a href="#contact">Contacto</a></li>
                 </ul>
             </div>
             <div class="nav__social">
               <ul>
                 <li>
-                  <a href=""><img src="/public/imagenes/svg/Instagram_icon-icons.com_66804.svg" alt=""></a>
+                  <a href="https://www.instagram.com/javier.alzu/" target="_blank"><img src="/public/imagenes/svg/Instagram_icon-icons.com_66804.svg" alt="instagram link" loading="lazy"></a>
                 </li>
                 <li>
-                  <a href=""><img src="/public/imagenes/svg/whatsapp_icon-icons.com_62756.svg" alt=""></a>
+                  <a href="" target="_blank">
+                    <img src="/public/imagenes/svg/whatsapp_icon-icons.com_62756.svg" alt="whatsapp link" loading="lazy">
+                  </a>
                 </li>
               </ul>
             </div>
         </div>
         </div>
     </nav>
+    <!-- navbar end -->
 
-
+<!-- hero start -->
   <section class="hero">
         <div class="hero__img">
-           <img src="public/imagenes/hero/hero-img.webp" alt=""> 
+           <img src="public/imagenes/hero/hero-img.webp" alt="imagen de portada marketing digital" > 
         </div>
         <div class="hero__description">
         <div class="hero__title">
@@ -67,23 +81,27 @@
             </p>
         </div>
         <div class="hero__buttons">
-            <a href="#" class="btn primary">Empieza hoy</a>
-            <a href="#" class="services__link">Nuestro servicios</a>
+            <a  class="btn primary">Empieza hoy</a>
+            <a href="#services" class="services__link">Nuestro servicios</a>
         </div>
      </div>
   </section>
+<!-- hero end -->
+
 </header>
+<!-- header end -->
+
+<!-- servicios section start -->
 
 <section class="services" id="services">
   <h2 class="section__title">
    <span>Aumenta tu visibilidad y atrae más clientes</span> 
    SEO, publicidad y contenido para tu éxito digital.
   </h2>
-
 <div class="services__grid">
-  <div class="services__box">
+  <article class="services__box">
     <div class="services__img">
-      <img src="public/imagenes/servicios/CAMPAÑAS-MARKETING.webp" alt="">
+      <img src="public/imagenes/servicios/CAMPAÑAS-MARKETING.webp" alt=" armando una estrategia digital personalizada " loading="lazy">
     </div>
     <div class="services__description">
       <h3>Estrategia digital Personalizada</h3>
@@ -93,17 +111,15 @@
           <span class="circle" aria-hidden="true">
             <span class="icon arrow"></span>
           </span>
-          <a href="#services" class="button-text">SABER MAS</a>
+          <a href="#faq-contact" class="button-text">SABER MAS</a>
         </button>
       </div>
     </div>
-  </div>
+  </article>
   
-  
-  
-  <div class="services__box">
+  <article class="services__box">
     <div class="services__img">
-      <img src="public/imagenes/servicios/seo.webp" alt="">
+      <img src="public/imagenes/servicios/seo.webp" alt="descripcion visual de SEO" loading="lazy">
     </div>
     <div class="services__description">
       <h3>Optimización para Motores de Búsqueda (SEO)</h3>
@@ -113,15 +129,15 @@
           <span class="circle" aria-hidden="true">
             <span class="icon arrow"></span>
           </span>
-          <a href="#services" class="button-text">SABER MAS</a>
+          <a href="#faq-contact" class="button-text">SABER MAS</a>
         </button>
       </div>
     </div>
-  </div>
+  </article>
   
-  <div class="services__box">
+  <article class="services__box">
     <div class="services__img">
-      <img src="public/imagenes/servicios/SOCIAL-MEDIA-MARKETING.webp" alt="">
+      <img src="public/imagenes/servicios/SOCIAL-MEDIA-MARKETING.webp" alt=" trabajando con diversas redes sociales" loading="lazy">
     </div>
     <div class="services__description">
       <h3>Gestión Profesional de Redes Sociales</h3>
@@ -131,15 +147,15 @@
           <span class="circle" aria-hidden="true">
             <span class="icon arrow"></span>
           </span>
-          <a href="#services" class="button-text">SABER MAS</a>
+          <a href="#faq-contact" class="button-text">SABER MAS</a>
         </button>
       </div>
     </div>
-  </div>
+  </article>
   
-  <div class="services__box">
+  <article class="services__box">
     <div class="services__img">
-      <img src="public/imagenes/servicios/ANALISIS-MARKETING.webp" alt="">
+      <img src="public/imagenes/servicios/ANALISIS-MARKETING.webp" alt="Análisis de datos y reportes para mejorar resultados en marketing" loading="lazy">
     </div>
     <div class="services__description">
       <h3>Análisis de Datos y Reportes </h3>
@@ -149,97 +165,96 @@
           <span class="circle" aria-hidden="true">
             <span class="icon arrow"></span>
           </span>
-          <a href="#services" class="button-text">SABER MAS</a>
+          <a href="#faq-contact" class="button-text">SABER MAS</a>
         </button>
       </div>
     </div>
-  </div>
+  </article>
 </div>
 </section>
 
+<!-- servicios section end -->
 
+<!-- objetivos section start -->
 <section class="objetivos" id="objetivos">
   <h2 class="section__title">
     <span>Aspectos Clave para el Éxito de Nuestros Clientes</span> 
     Principios que impulsan el éxito y el crecimiento digital.
    </h2>
   <div class="objetivos__grid">
-
     <div class="objetivos__box">
       <div class="objetivos__icon">
-        <img src="public/imagenes/svg/list-check-solid.svg" alt="">
+        <img src="public/imagenes/svg/list-check-solid.svg" alt="lista de tareas completada" loading="lazy">
       </div>
       <div class="objetivos__description">
-        <span>
+        <h3>
           Compromisos Efectivos:
-        </span>
+        </h3>
         <p>
-        Nos dedicamos a crear planes personalizados que se alineen con los objetivos de cada cliente, analizando el mercado y la competencia para asegurar tácticas efectivas. Utilizamos datos y métricas clave para medir el éxito y ajustar estrategias en tiempo real, maximizando el retorno de la inversión (ROI).
+          Creamos estrategias de marketing digital personalizadas que se alinean con los objetivos de negocio de cada cliente. Analizamos el mercado y la competencia para implementar tácticas efectivas, utilizando datos y métricas para medir el éxito de las campañas y optimizar el rendimiento de marketing en tiempo real.
        </p>
       </div>
     </div>
 
-
     <div class="objetivos__box">
       <div class="objetivos__icon">
-        <img src="public/imagenes/svg/globe-solid.svg" alt="">
+        <img src="public/imagenes/svg/globe-solid.svg" alt="un mundo representando la accesiblidad" loading="lazy">
       </div>
       <div class="objetivos__description">
-        <span>
+        <h3>
           Accesibilidad:
-        </span>
+        </h3>
         <p>
-        Buscamos que nuestros servicios de marketing digital sean accesibles para todos, especialmente para pequeñas y medianas empresas. Ofrecemos soluciones escalables que se adaptan a diferentes presupuestos, asegurando que todos los negocios puedan beneficiarse de nuestras estrategias. Creemos que el marketing digital debe ser una herramienta accesible para el crecimiento.
+          Nos esforzamos por hacer que nuestros servicios de marketing digital sean accesibles a todos, especialmente a pequeñas y medianas empresas. Ofrecemos soluciones escalables adaptadas a distintos presupuestos, garantizando que todos los negocios puedan aprovechar nuestras estrategias efectivas.
        </p>
       </div>
     </div>
-
 
     <div class="objetivos__box">
       <div class="objetivos__icon">
-        <img src="public/imagenes/svg/money-bill-trend-up-solid.svg">
+        <img src="public/imagenes/svg/money-bill-trend-up-solid.svg" alt="gráfica de crecimiento de ingresos" loading="lazy">
       </div>
       <div class="objetivos__description">
-        <span>
-          Prosperidad de Nuestros Clientes:
-        </span>
+        <h3>
+          Prosperidad:
+        </h3>
         <p>
-        Nuestro objetivo es que nuestros clientes prosperen, midiendo el éxito por el crecimiento de sus negocios. Nos comprometemos a construir relaciones a largo plazo y ser socios estratégicos, priorizando la satisfacción del cliente y superando sus expectativas en cada proyecto.
+          Nuestro objetivo es que nuestros clientes prosperen, evaluando el éxito por el crecimiento de sus negocios. Nos comprometemos a establecer relaciones a largo plazo como socios estratégicos, priorizando la satisfacción del cliente y superando sus expectativas en cada proyecto.
        </p>
       </div>
     </div>
-
-
   </div>
 </section>
 
+<!-- objetivos section end -->
 
+
+
+<!-- section clients comments start -->
 <section class="clients" id="clients">
   <h2 class="section__title">
     <span>Lo que dicen quienes nos eligen</span> 
     Nuestras historias de éxito, contadas por nuestros clientes
    </h2>
-
    <div class="clients__box">
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <p>"Gran equipo y excelentes resultados. Sin duda, hicieron la diferencia."</p>
           <span class="client__name">
-            - Lamar Jackson, <strong>FreshIdeas.</strong> 
-
+            - Oscar Flores, <strong>FreshIdeas.</strong> 
           </span>
         </div>
         <div class="swiper-slide">
           <p>"Han sido clave en nuestro crecimiento. Un servicio que marca la diferencia."</p>
           <span class="client__name">
-            - Sara Connor, <strong>Innovatech.</strong> 
+            - Gonzalo Diaz, <strong>Innovatech.</strong> 
           </span>
         </div>
         <div class="swiper-slide">
           <p>"Su trabajo nos ha llevado a otro nivel. Los resultados hablan por sí solos."</p>
           <span class="client__name">
-            - Tito Lopez, <strong>GreenLife.</strong>
+            - Melisa Lopez, <strong>GreenLife.</strong>
           </span>
         </div>
       </div>
@@ -248,102 +263,115 @@
     </div>
    </div>
 </section>
+<!-- section clients comments end -->
 
-<section class="faq-contact">
+
+<!-- faq and contact section start -->
+<section class="faq-contact" id="faq-contact">
   <div class="faq__grid">
+    <!-- faq start -->
     <div class="faq__container">
       <span>Preguntas frecuentes</span>
       <div class="faq__box">
-        <button class="accordion"><span>¿Qué servicios ofrece la agencia?</span><i class="fa-solid fa-angle-down"></i></button>
+        <button class="accordion" aria-expanded="false"><h3>¿Qué servicios ofrece la agencia?</h3><i class="fa-solid fa-angle-down"></i></button>
 <div class="panel">
   <p>Ofrecemos servicios como gestión de redes sociales, publicidad en Google Ads y Facebook, optimización SEO, diseño web, y branding.</p>
 </div>
 </div>
 
 <div class="faq__box">
-  <button class="accordion"><span>¿Cómo puede el marketing digital ayudar a mi negocio?</span><i class="fa-solid fa-angle-down"></i></button>
-
+  <button class="accordion" aria-expanded="false"><h3>¿Cómo puede el marketing digital ayudar a mi negocio?</h3><i class="fa-solid fa-angle-down"></i></button>
   <div class="panel">
     <p>El marketing digital puede aumentar tu visibilidad online, atraer clientes potenciales, mejorar la interacción con tu audiencia, y generar más ventas.</p>
   </div>
 </div>
 
 <div class="faq__box">
-  <button class="accordion"><span>¿Cuánto tiempo se tarda en ver resultados?</span><i class="fa-solid fa-angle-down"></i></button>
-
+  <button class="accordion" aria-expanded="false"><h3>¿Cuánto tiempo se tarda en ver resultados?</h3><i class="fa-solid fa-angle-down"></i></button>
   <div class="panel">
     <p>Los resultados varían según la estrategia, pero generalmente se pueden notar mejoras significativas entre 2 a 4 meses.</p>
   </div>
 </div>
-<div class="faq__box">
-  <button class="accordion"><span>¿Cómo se determina la estrategia de marketing adecuada?</span><i class="fa-solid fa-angle-down"></i></button>
 
+<div class="faq__box">
+  <button class="accordion" aria-expanded="false"><h3>¿Cómo se determina la estrategia de marketing adecuada?</h3><i class="fa-solid fa-angle-down"></i></button>
   <div class="panel">
     <p>Realizamos un análisis de tu negocio, competencia y mercado objetivo para diseñar una estrategia personalizada que se ajuste a tus objetivos.</p>
   </div>
 </div>
+
 <div class="faq__box">
-  <button class="accordion"><span>¿Puedo cambiar o ajustar la estrategia de marketing en cualquier momento?
-  </span><i class="fa-solid fa-angle-down"></i></button>
+  <button class="accordion" aria-expanded="false"><h3>¿Puedo cambiar o ajustar la estrategia de marketing en cualquier momento?
+  </h3><i class="fa-solid fa-angle-down"></i></button>
 
   <div class="panel">
     <p>Claro, mantenemos una comunicación constante contigo y ajustamos la estrategia según los resultados y nuevas oportunidades de mercado.</p>
   </div>
 </div>
     </div>
+ <!-- faq end -->
 
-
-  <div class="contact__container">
+    <!-- contact start -->
+  <div class="contact__container" role="form" id="contact">
       <p>Deposita tus dudas o consultas! </p>
       <i class="fa-solid fa-arrow-down"></i>
       <form action="https://formspree.io/f/xnnqaorg"
       method="POST" id="my-form">
         <div class="input__box">
-          <label for="name" class="sr-only">Nombre</label>
-            <input type="text"  id="name" placeholder="Nombre" required>
+          <label for="name" class="sr-only">Nombre completo</label>
+            <input type="text"  id="name" placeholder="Nombre Completo" required>
           </div>
           <div class="input__box">
-            <label for="email" class="sr-only">Email</label>
-              <input type="email"  id="email" placeholder="Email" required>
+            <label for="email" class="sr-only">Correo electrónico</label>
+              <input type="email"  id="email" placeholder="Correo electrónico" required>
             </div>
-            <label for="message" class="sr-only">Mensaje</label>
+            <label for="message" class="sr-only">Tu mensaje o consulta</label>
                 <textarea name="message" id="message" placeholder="Deja tu mensaje!" required></textarea>
-                <button type="submit" class="btn secondary">Enviar consulta</button>
+                <!-- <button type="submit" class="btn secondary">Enviar consulta</button> -->
+                <div id="ninth" class="buttonBox">
+                  <button type="submit">Enviar consulta</button>
+                </div>
       </form>
-      <div id="thank-you-message" style="display:none;">¡Gracias por tu consulta! Nos pondremos en contacto contigo pronto.</div>
     </div>
+    <!-- contact end -->
   </div>
+<!-- faq and contact section end -->
+
 </section>
 
 
+<!-- final cta start -->
 
 <section class="cta__final">
   <div class="cta__grid">
       <h3>¿Estas listo para llevar tu exito comercial a otro nivel?</h3>
-      <a class="btn" data-cursor-inactive href="#">
+      <a class="btn"  href="#" role="button" aria-label="Iniciar proceso para llevar tu éxito comercial a otro nivel">
         <span class="circle"><span class="circle__arrow"></span></span> Empieza ahora
       </a>
-      <img src="public/imagenes/footer/footer-img1.webp" alt="">
+      <img src="public/imagenes/footer/footer-img1.webp" alt="Nave espacial que simboliza el crecimiento empresaria" loading="lazy">
   </div>
-  
 </section>
+
+<!-- final cta end -->
 
 
 
 <hr class="section-divider">
 
-<footer class="footer" id="footer">
+<!-- footer section start -->
+
+<footer class="footer" id="footer" >
   <div class="footer__grid">
       <div class="logo mobile">
         <span>JAVALZU</span>
       </div>
     <div class="menu-items">
       <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Servicios</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Clientes</a></li>
-            <li><a href="#">Contacto</a></li>
+        <li><a href="#header">Inicio</a></li>
+        <li><a href="#services">Servicios</a></li>
+            <li><a href="#objetivos">Nosotros</a></li>
+            <li><a href="#clients">Clientes</a></li>
+            <li><a href="#contact">Contacto</a></li>
         </ul>
     </div>
     <div class="logo desktop">
@@ -352,28 +380,34 @@
     <div class="footer__social">
       <ul>
         <li>
-          <a href=""><img src="/public/imagenes/svg/Instagram_icon-icons.com_66804.svg" alt=""></a>
+          <a href=""><img src="/public/imagenes/svg/Instagram_icon-icons.com_66804.svg" alt="Icono de Instagram" loading="lazy" ></a>
         </li>
         <li>
-          <a href=""><img src="/public/imagenes/svg/whatsapp_icon-icons.com_62756.svg" alt=""></a>
+          <a href=""><img src="/public/imagenes/svg/whatsapp_icon-icons.com_62756.svg" alt="Icono de WhatsApp" loading="lazy"></a>
         </li>
       </ul>
     </div>
   </div>
   <div class="footer__info">
-    <span>micorreo@gmail.com</span>
+    <span><a href="mailto:javieralzuu@gmail.com">javieralzuu@gmail.com</a></span>
     <span>Made by JAVALZU</span>
   </div>
 </footer>
 
-<a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
-  <img src="/public/imagenes/icons8-whatsapp.svg" alt="">
+<!-- footer section end -->
+
+<!-- whatsapp button  -->
+<a href="" class="whatsapp-button" target="_blank">
+  <img src="/public/imagenes/icons8-whatsapp.svg" alt="" loading="lazy">
 </a>
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- script sweet alert  -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" ></script>
+<!-- script swiper js  -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" ></script>
+<!-- script to js  -->
 <script src="script/script.js"></script>
 </body>
 </html>

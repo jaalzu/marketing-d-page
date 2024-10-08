@@ -3,6 +3,7 @@
     height: auto;
     padding-bottom: 2rem;
     overflow: hidden;
+
     .cta__grid{
         display: flex;
         align-items: center;
@@ -19,7 +20,6 @@
             max-width: 500px;
         }
         
-
         img{
             width: 450px;
         }
@@ -30,10 +30,12 @@
 @include respond-to(desktop){
     .cta__final{
         padding-bottom: 2rem;
+
         .cta__grid{
             h3{
                 font-size: 2.5rem;
             }
+            
             img{
                 width: 550px;
             }

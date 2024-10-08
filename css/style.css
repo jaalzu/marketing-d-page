@@ -41,16 +41,34 @@
   background: linear-gradient(to top, #390ae3, #5500d5, #6600c8, #7100bb, #7900af);
 }
 
+#ninth > button {
+  transition: all 0.5s ease-in-out;
+  border: 1px solid #1E1926;
+  border-radius: 8px;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  margin-top: 1.3rem;
+}
+
+#ninth:hover button {
+  background: #390AE3;
+  color: white;
+}
+
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 1000;
+  cursor: pointer;
+}
+.whatsapp-button:hover {
+  opacity: 0.7;
 }
 
 .whatsapp-button img {
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
 }
 
@@ -239,6 +257,7 @@ button:hover .button-text {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -285,7 +304,11 @@ h1, h2, h3 {
   font-family: "Montserrat", sans-serif;
 }
 
-p, span, a {
+p, span, a, button {
+  font-family: "Open Sans", sans-serif;
+}
+
+.custom-popup {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -460,6 +483,9 @@ p, span, a {
   .navbar .nav-container .nav__social ul li img {
     width: 40px;
   }
+  .navbar .nav-container .nav__social ul li img:hover {
+    opacity: 0.7;
+  }
 }
 .header {
   height: auto;
@@ -612,6 +638,9 @@ p, span, a {
   color: #FEF6FF;
   font-size: 1.8rem;
 }
+.footer .footer__grid .menu-items ul li a:hover {
+  opacity: 0.7;
+}
 .footer .footer__grid .footer__social {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -625,6 +654,9 @@ p, span, a {
 .footer .footer__grid .footer__social ul img {
   max-width: 45px;
 }
+.footer .footer__grid .footer__social ul img:hover {
+  opacity: 0.7;
+}
 .footer .footer__info {
   display: flex;
   flex-direction: column;
@@ -632,6 +664,9 @@ p, span, a {
   gap: 1.5rem;
   color: #FEF6FF;
   padding-bottom: 1rem;
+}
+.footer .footer__info a {
+  color: #FEF6FF;
 }
 
 @media (min-width: 1025px) {
@@ -666,7 +701,7 @@ p, span, a {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 3rem;
-    margin-inline: 2vw;
+    margin-inline: 5vw;
     font-size: 1.2rem;
   }
 }
@@ -684,9 +719,9 @@ p, span, a {
 .services .services__grid .services__box {
   margin-block: 2rem;
   border: 1px solid rgb(253, 253, 253);
-  -webkit-box-shadow: 4px 7px 31px -15px rgba(0, 0, 0, 0.82);
-  -moz-box-shadow: 4px 7px 31px -15px rgba(0, 0, 0, 0.82);
-  box-shadow: 4px 7px 31px -12px rgba(0, 0, 0, 0.82);
+  -webkit-box-shadow: 4px 7px 31px -19px rgba(0, 0, 0, 0.82);
+  -moz-box-shadow: 4px 7px 31px -19px rgba(0, 0, 0, 0.82);
+  box-shadow: 4px 7px 31px -15px rgba(0, 0, 0, 0.82);
   border-radius: 10px;
   padding: 1.5rem;
 }
@@ -778,7 +813,7 @@ p, span, a {
 .objetivos .objetivos__grid .objetivos__box .objetivos__description {
   color: #FEF6FF;
 }
-.objetivos .objetivos__grid .objetivos__box .objetivos__description span {
+.objetivos .objetivos__grid .objetivos__box .objetivos__description h3 {
   font-size: 1.55rem;
   font-weight: 700;
 }
@@ -813,7 +848,7 @@ p, span, a {
     display: flex;
     flex-direction: column;
   }
-  .objetivos .objetivos__grid .objetivos__box .objetivos__description span {
+  .objetivos .objetivos__grid .objetivos__box .objetivos__description h3 {
     font-size: 1.65rem;
   }
 }
@@ -892,7 +927,7 @@ p, span, a {
   font-size: 1.7rem;
   margin-top: 1.5rem;
 }
-.faq-contact .faq__grid .faq__container .faq__box .accordion span {
+.faq-contact .faq__grid .faq__container .faq__box .accordion h3 {
   font-size: 1.7rem;
   font-weight: 700;
 }

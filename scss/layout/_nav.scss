@@ -1,8 +1,10 @@
 .navbar {
     width: 100%;
     height: .3rem;
+
         .nav-container{
             margin-top: 5rem;
+
             .logo {
                 position: absolute;
                 top: 26px;
@@ -24,12 +26,14 @@
         transition: transform 0.5s ease-in-out;
         text-align: center;
         justify-content: center;
+
         ul{      
             margin-top: 1rem;
             margin-bottom: 1rem;
 
             li{
                 margin-bottom: 1.5rem;
+
                 a{
                     color: $color-black;
                     font-weight: $fw-regular;
@@ -43,22 +47,24 @@
                     background-size: 200% 100%;
                     background-position: 100%;
                     transition: background-position 335ms ease;
-                    text-decoration: none; // text decorations are clipped in WebKit browsers
-                        &:hover{
-                            background-position: 0 100%;
-                        }
+                    text-decoration: none;
+
+                     &:hover{
+                        background-position: 0 100%;
+                    }
                 }
             }
         }
         
     }
+
     .nav__button{
         display: none;
     }
+
     .nav__social{
         display: none;
     }
-    
     
     .nav-container .checkbox {
         position: absolute;
@@ -137,6 +143,7 @@
     .navbar{
         padding-inline: 5vw;
         height: 100%;
+
         .nav-container{
             width: 100%;
             display: flex;
@@ -149,54 +156,59 @@
             }
 
             .menu-items{
-        transform: translateY(20%);
-        margin-right: 4rem;
-        backdrop-filter: none;
-            margin-top: 2rem;
-        flex-direction: row;
-        border-top: none;
-        border-bottom: none;
-        ul{
-            display: flex;
-            margin-top: 0;
-            gap: 2rem;
+                transform: translateY(20%);
+                margin-right: 4rem;
+                backdrop-filter: none;
+                margin-top: 2rem;
+                flex-direction: row;
+                border-top: none;
+                border-bottom: none;
+                    ul{
+                        display: flex;
+                        margin-top: 0;
+                        gap: 2rem;
 
-            li{
-                margin-bottom: 0;
-                a{
-                    font-size: 1.3rem;
-                }
-            }
-        }
-    }
+                        li{
+                            margin-bottom: 0;
+                            a{
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+         }
 
            .checkbox{
             display: none;
            }
+
            .hamburger-lines{
             display: none;
            }
-
 
            .nav__social{
                display: inline-flex;
                align-items: center;
                justify-content: center;
+
                ul{
                     display: flex;
                     position: absolute;
                     right: 5%;
                     top: 4%;
                     gap: 4rem;
+
                 li{
                     img{
                         width: 40px;
+
+                        &:hover{
+                            opacity: .7;
+                        }
                     }
                 }
             }
            }
         }
-
     }
   }
  

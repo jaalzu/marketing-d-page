@@ -1,5 +1,6 @@
 .services{
     padding-bottom: 3rem;
+
     .services__grid{
         display: grid;
         grid-template-columns: 1fr;
@@ -11,9 +12,9 @@
         .services__box{
             margin-block: 2rem;
             border: 1px solid rgb(253, 253, 253);
-            -webkit-box-shadow: 4px 7px 31px -15px rgba(0,0,0,0.82);
-            -moz-box-shadow: 4px 7px 31px -15px rgba(0,0,0,0.82);
-            box-shadow: 4px 7px 31px -12px rgba(0,0,0,0.82);
+            -webkit-box-shadow: 4px 7px 31px -19px rgba(0,0,0,0.82);
+            -moz-box-shadow: 4px 7px 31px -19px rgba(0,0,0,0.82);
+            box-shadow: 4px 7px 31px -15px rgba(0,0,0,0.82);
             border-radius: 10px;
             padding: 1.5rem;
 
@@ -58,6 +59,7 @@
                         height: 250px;
                        }
                 }
+
                     .services__description{
                         text-align: center;
                 }
@@ -74,11 +76,13 @@
             grid-template-columns: 1fr 1fr;
             column-gap: 1rem;
             row-gap: 2rem;
+
             .services__box{
                 display: flex;
                 margin-block: 0rem;
                 flex-direction: column;
                 justify-content: center;
+                
                     .services__img{ 
                         img{
                             width: 250px;

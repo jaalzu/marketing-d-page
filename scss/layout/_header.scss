@@ -70,8 +70,10 @@
     .header{
         .hero{
             margin-top: 1rem;
+
             .hero__img{
                 margin-bottom: .5rem;
+
                 img{
                     width: 500px;
                 }
@@ -80,10 +82,8 @@
             .hero__description{
                 margin-inline: 15vw;
                 
-
                 .hero__text{
                     text-align: center;
-                    
                 }
 
                 .hero__buttons{
@@ -106,6 +106,7 @@
             margin-right: auto;
 
             .hero__img{
+
                 img{
                     width: 700px;
                 }
@@ -146,6 +147,7 @@
             }
             .hero__description{
                 text-align: center;
+
                      .hero__text{
                     p{
                         font-size: 1.1rem;
