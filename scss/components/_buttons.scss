@@ -56,12 +56,13 @@
   border-radius: 8px;
   padding: 1rem 0;
   font-size:1.2rem;
+  font-weight: $fw-bold;
   margin-top: 1.3rem;
 }
 
 #ninth:hover button{
   background:$color-primary;
-  color:white;
+  color:$color-white;
 }
 
 

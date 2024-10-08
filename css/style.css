@@ -47,12 +47,13 @@
   border-radius: 8px;
   padding: 1rem 0;
   font-size: 1.2rem;
+  font-weight: 700;
   margin-top: 1.3rem;
 }
 
 #ninth:hover button {
   background: #390AE3;
-  color: white;
+  color: #FEF6FF;
 }
 
 .whatsapp-button {
@@ -501,7 +502,7 @@ p, span, a, button {
   justify-content: center;
 }
 .header .hero .hero__img img {
-  width: 550px;
+  width: 100%;
 }
 .header .hero .hero__description {
   text-align: center;
@@ -555,9 +556,6 @@ p, span, a, button {
   .header .hero .hero__img {
     margin-bottom: 0.5rem;
   }
-  .header .hero .hero__img img {
-    width: 500px;
-  }
   .header .hero .hero__description {
     margin-inline: 15vw;
   }
@@ -577,7 +575,7 @@ p, span, a, button {
     margin-right: auto;
   }
   .header .hero .hero__img img {
-    width: 700px;
+    width: 65%;
   }
   .header .hero .hero__description {
     text-align: center;
@@ -598,7 +596,7 @@ p, span, a, button {
     max-width: 1300px;
   }
   .header .hero .hero__img img {
-    width: 750px;
+    width: 75%;
   }
   .header .hero .hero__description {
     text-align: center;
@@ -730,7 +728,7 @@ p, span, a, button {
   margin-bottom: 1.5rem;
 }
 .services .services__grid .services__box .services__img img {
-  width: 220px;
+  width: 100%;
 }
 .services .services__grid .services__box .services__description {
   padding-right: 1rem;
@@ -752,8 +750,7 @@ p, span, a, button {
     justify-content: center;
   }
   .services .services__grid .services__box .services__img img {
-    width: 350px;
-    height: 250px;
+    width: 50%;
   }
   .services .services__grid .services__box .services__description {
     text-align: center;
@@ -773,8 +770,7 @@ p, span, a, button {
     justify-content: center;
   }
   .services .services__grid .services__box .services__img img {
-    width: 250px;
-    height: 180px;
+    width: 70%;
   }
 }
 @media (min-width: 1300px) {
@@ -782,8 +778,7 @@ p, span, a, button {
     max-width: 1750px;
   }
   .services .services__grid .services__box .services__img img {
-    width: 280px;
-    height: 200px;
+    width: 50%;
   }
 }
 .objetivos {
