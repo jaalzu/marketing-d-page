@@ -17,7 +17,7 @@
     .menu-items {
         height: auto;
         width: 100%;
-        backdrop-filter: blur(150px);
+        backdrop-filter: blur(60px);
         transform: translateY(-150%);
         border-top: 2px solid $color-white;
         border-bottom: 2px solid $color-white;
@@ -29,7 +29,7 @@
 
         ul{      
             margin-top: 1rem;
-            margin-bottom: 1rem;
+            margin-bottom: .3rem;
 
             li{
                 margin-bottom: 1.5rem;
@@ -37,7 +37,7 @@
                 a{
                     color: $color-black;
                     font-weight: $fw-regular;
-                    font-size: 1.3rem;
+                    font-size: 1.6rem;
                     position: relative;
                     overflow: hidden;
                     background-clip: text;
