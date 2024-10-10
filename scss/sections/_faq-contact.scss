@@ -1,17 +1,21 @@
 .faq-contact{
     height: auto;
-    padding-block: 3rem;
-
+    position: relative;
+    overflow: hidden;
+    padding-top: 2rem;
+    padding-bottom: 7rem;
+    
     span{
         font-size: 2rem;
         padding-top: 2rem;
         font-weight: $fw-bold;
     }
-
+    
     .faq__grid{
+       
         display: grid;
         grid-template-columns: 1fr;
-        margin-block: 2rem;
+        margin-block: 4rem;
 
         .faq__container{
         margin-inline: 5vw;
@@ -52,6 +56,33 @@
                 }            
         }
     }
+
+    .custom-shape-divider-bottom-1728522812 {
+        position: absolute;
+        bottom: 0%;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    
+    .custom-shape-divider-bottom-1728522812 svg {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 63px;
+        stroke: none;
+        transform: rotateY(180deg);
+
+    }
+    
+    .custom-shape-divider-bottom-1728522812 .shape-fill {
+        fill: $color-primary;
+
+    }
+    
+   
 }
 
 
@@ -66,20 +97,21 @@
 
 
 .faq-contact{
+   
     .contact__container{
-        padding: 1rem;
+        padding: 1.1rem;
         background-color: $color-white;
         margin-inline: 2vw;
-        border-radius: 10px;
+        border-radius: 13px;
         -webkit-box-shadow: 10px 11px 22px -13px rgba(0,0,0,0.49);
         -moz-box-shadow: 10px 11px 22px -13px rgba(0,0,0,0.49);
         box-shadow: 10px 11px 22px -13px rgba(0,0,0,0.49);
         p{
             font-size: 1.6rem;
             text-align: center;
-            margin-bottom: .8rem;
+            margin-bottom: .5rem;
             font-weight: $fw-bold;
-            padding-top: 1rem;
+            padding-top: .5rem;
         }
 
         i{
@@ -89,49 +121,56 @@
         }
 
         form{
-            padding-top: 2rem;
-            padding-bottom: 2rem;
             display: flex;
             flex-direction: column;
 
 
             .input__box{
-                padding: 2rem 0;
+                padding: 1.7rem 0;
                 width: 100%;
+
+                label{
+                    font-size: 1.2rem;
+                    font-weight: $fw-bold;
+                    display: block;
+                    margin-bottom: .5rem;
+                }
 
                 input{
                     border: none;
                     width: 90%;
-                    border-bottom: 2px solid $color-black;
-                    outline: none;
-                    background: transparent;
-                    padding-bottom: 1rem;
-                    font-family: $ff-secondary;
+                    border-radius: 20px;
+                    border: 1px solid $color-black;
+                    // border-bottom: 2px solid $color-black;
+                    padding: .5rem;
+                    padding-inline: 1rem;
                     font-size: 1.7rem;
-
+                    background:transparent;
+                    
                     &::placeholder{
-                        color: $color-black;
+                        color: $color-gray;
                     }
                 }
+               
 
             }
 
             textarea{
+                background:transparent;
                 display: block;
                 margin-block: 2rem;
                 width: 90%;
                 height: 150px;
-                background: transparent;
-                border: 2px solid $color-black;
-                border-radius: 5px;
+                border: 1px solid $color-black;
+                border-radius: 10px;
                 font-size: 1.5rem;
                 font-family: $ff-secondary;
-                outline: $color-primary;
                 padding: .5rem;
                 resize: none;
                 
                 &::placeholder{
-                    color: $color-black;
+                    color: $color-gray;
+
                 }
                 
             }

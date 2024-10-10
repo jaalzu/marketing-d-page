@@ -51,7 +51,7 @@
   outline: none;
   font-size: 1.2rem;
   font-weight: 700;
-  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 #ninth > button:hover {
   opacity: 0.7;
@@ -264,7 +264,7 @@ button:hover .button-text {
 
 body {
   background-color: #FAACA8;
-  background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+  background-image: linear-gradient(90deg, #FAACA8 0%, #DDD6F3 100%);
 }
 
 .section-divider {
@@ -305,7 +305,7 @@ h1, h2, h3 {
   font-family: "Sora", sans-serif;
 }
 
-p, span, a, button {
+p, span, a, button, label, input {
   font-family: "Karla", sans-serif;
 }
 
@@ -716,7 +716,7 @@ p, span, a, button {
 }
 .services .services__grid .services__box {
   margin-block: 2rem;
-  border: 2px solid #FEF6FF;
+  border: 1px solid #FEF6FF;
   border-radius: 10px;
   padding: 1.5rem;
 }
@@ -890,7 +890,10 @@ p, span, a, button {
 }
 .faq-contact {
   height: auto;
-  padding-block: 3rem;
+  position: relative;
+  overflow: hidden;
+  padding-top: 2rem;
+  padding-bottom: 7rem;
 }
 .faq-contact span {
   font-size: 2rem;
@@ -900,7 +903,7 @@ p, span, a, button {
 .faq-contact .faq__grid {
   display: grid;
   grid-template-columns: 1fr;
-  margin-block: 2rem;
+  margin-block: 4rem;
 }
 .faq-contact .faq__grid .faq__container {
   margin-inline: 5vw;
@@ -935,6 +938,26 @@ p, span, a, button {
   border-radius: 4px;
   overflow: hidden;
 }
+.faq-contact .custom-shape-divider-bottom-1728522812 {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+.faq-contact .custom-shape-divider-bottom-1728522812 svg {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 63px;
+  stroke: none;
+  transform: rotateY(180deg);
+}
+.faq-contact .custom-shape-divider-bottom-1728522812 .shape-fill {
+  fill: #390AE3;
+}
 
 @media (min-width: 668px) and (max-width: 1024px) {
   .faq-contact .faq__grid {
@@ -942,10 +965,10 @@ p, span, a, button {
   }
 }
 .faq-contact .contact__container {
-  padding: 1rem;
+  padding: 1.1rem;
   background-color: #FEF6FF;
   margin-inline: 2vw;
-  border-radius: 10px;
+  border-radius: 13px;
   -webkit-box-shadow: 10px 11px 22px -13px rgba(0, 0, 0, 0.49);
   -moz-box-shadow: 10px 11px 22px -13px rgba(0, 0, 0, 0.49);
   box-shadow: 10px 11px 22px -13px rgba(0, 0, 0, 0.49);
@@ -953,9 +976,9 @@ p, span, a, button {
 .faq-contact .contact__container p {
   font-size: 1.6rem;
   text-align: center;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.5rem;
   font-weight: 700;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
 }
 .faq-contact .contact__container i {
   font-size: 1.5rem;
@@ -963,44 +986,47 @@ p, span, a, button {
   text-align: center;
 }
 .faq-contact .contact__container form {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
 }
 .faq-contact .contact__container form .input__box {
-  padding: 2rem 0;
+  padding: 1.7rem 0;
   width: 100%;
+}
+.faq-contact .contact__container form .input__box label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 .faq-contact .contact__container form .input__box input {
   border: none;
   width: 90%;
-  border-bottom: 2px solid #1E1926;
-  outline: none;
-  background: transparent;
-  padding-bottom: 1rem;
-  font-family: "Karla", sans-serif;
+  border-radius: 20px;
+  border: 1px solid #1E1926;
+  padding: 0.5rem;
+  padding-inline: 1rem;
   font-size: 1.7rem;
+  background: transparent;
 }
 .faq-contact .contact__container form .input__box input::placeholder {
-  color: #1E1926;
+  color: rgb(133, 133, 133);
 }
 .faq-contact .contact__container form textarea {
+  background: transparent;
   display: block;
   margin-block: 2rem;
   width: 90%;
   height: 150px;
-  background: transparent;
-  border: 2px solid #1E1926;
-  border-radius: 5px;
+  border: 1px solid #1E1926;
+  border-radius: 10px;
   font-size: 1.5rem;
   font-family: "Karla", sans-serif;
-  outline: #390AE3;
   padding: 0.5rem;
   resize: none;
 }
 .faq-contact .contact__container form textarea::placeholder {
-  color: #1E1926;
+  color: rgb(133, 133, 133);
 }
 
 @media (min-width: 668px) and (max-width: 1024px) {
@@ -1057,7 +1083,6 @@ p, span, a, button {
 .cta__final {
   background-color: #390AE3;
   height: auto;
-  padding-bottom: 2rem;
   overflow: hidden;
 }
 .cta__final .cta__grid {
@@ -1068,7 +1093,7 @@ p, span, a, button {
   flex-direction: column;
 }
 .cta__final .cta__grid h3 {
-  margin-top: 6rem;
+  margin-top: 5rem;
   font-size: 2.3rem;
   color: #FEF6FF;
   margin-bottom: 3rem;
