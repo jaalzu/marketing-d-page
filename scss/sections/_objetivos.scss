@@ -11,8 +11,10 @@
             .objetivos__box{
                 background: $gradient-primary;
                 padding: 1.8rem 1rem;
-                border-radius: 5px;
-
+                border-radius: 15px;
+                -webkit-box-shadow: 10px 11px 22px -13px rgba(0,0,0,0.49);
+-moz-box-shadow: 10px 11px 22px -13px rgba(0,0,0,0.49);
+box-shadow: 10px 11px 22px -13px rgba(0,0,0,0.49);
                 .objetivos__icon{
                     display: flex;
                     justify-content: flex-start;

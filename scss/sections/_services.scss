@@ -11,10 +11,8 @@
 
         .services__box{
             margin-block: 2rem;
-            border: 1px solid rgb(253, 253, 253);
-            -webkit-box-shadow: 4px 7px 31px -19px rgba(0,0,0,0.82);
-            -moz-box-shadow: 4px 7px 31px -19px rgba(0,0,0,0.82);
-            box-shadow: 4px 7px 31px -15px rgba(0,0,0,0.82);
+            border: 2px solid $color-white;
+            
             border-radius: 10px;
             padding: 1.5rem;
 
@@ -28,7 +26,6 @@
 
             .services__description{
                 padding-right: 1rem;
-
                     h3{
                         color: $color-primary;
                         font-size: clamp(1.5rem,1.3vw,1.8rem);
@@ -95,11 +92,12 @@
 @include respond-to(large-desktop){
     .services{
         .services__grid{
+            gap: 2rem;
             max-width: 1750px;
             .services__box{
                 .services__img{
                     img{
-                        width: 50%;
+                        width: 60%;
                     }
                 }
             }

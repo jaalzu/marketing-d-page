@@ -16,13 +16,17 @@
 
         .hero__description{
             text-align: center;
-            margin-inline: 5vw;
+            margin-inline: 3vw;
             margin-top: 2rem;
 
             .hero__title{
-                font-size: clamp(1.5rem,1.5vw,2.5rem);
+                font-size: clamp(1.7rem,1.9vw,3rem);
                 margin-bottom: 1.3rem;
                 line-height: 1.2;
+                h1{
+                    
+                    font-weight: $fw-extrabold;
+                }
             }
 
             .hero__text{
@@ -117,13 +121,6 @@
                 .hero__title{
                     line-height: 1.2;
                 }
-
-                .hero__text{
-                              p{
-                                font-size: 1.020rem;
-                               }
-                            }
-
                     .hero__buttons{
                         gap: 2rem;
                     }
@@ -136,7 +133,7 @@
 @include respond-to(large-desktop) {
     .header{
         .hero{
-            max-width: 1300px;
+            max-width: 1500px;
 
             .hero__img{
                 img{
@@ -148,7 +145,7 @@
 
                      .hero__text{
                     p{
-                        font-size: 1.1rem;
+                        font-size: 1.2rem;
                     }
                 }
                 .hero__buttons{

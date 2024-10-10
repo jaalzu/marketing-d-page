@@ -23,7 +23,7 @@
   transform: rotate(20deg);
 }
 .btn.primary {
-  background: linear-gradient(to top, #390ae3, #5500d5, #6600c8, #7100bb, #7900af);
+  background: linear-gradient(135deg, #390AE3, #E039E3);
   color: #FEF6FF;
 }
 .btn.primary:hover:before {
@@ -38,22 +38,23 @@
 }
 .btn.secondary:hover {
   color: #FEF6FF;
-  background: linear-gradient(to top, #390ae3, #5500d5, #6600c8, #7100bb, #7900af);
+  background: linear-gradient(135deg, #390AE3, #E039E3);
 }
 
 #ninth > button {
-  transition: all 0.5s ease-in-out;
-  border: 2px solid #1E1926;
-  border-radius: 8px;
+  border: none;
+  border-radius: 7px;
+  width: min(50%, 180px);
+  color: #FEF6FF;
+  background-color: #390AE3;
   padding: 1rem 0;
+  outline: none;
   font-size: 1.2rem;
   font-weight: 700;
-  margin-top: 1.3rem;
+  margin-top: 0.5rem;
 }
-
-#ninth:hover button {
-  background: #390AE3;
-  color: #FEF6FF;
+#ninth > button:hover {
+  opacity: 0.7;
 }
 
 .whatsapp-button {
@@ -184,7 +185,7 @@ button:hover .button-text {
   padding: 0 5.5em 0 1em;
   font-size: 1.4rem;
   line-height: 3em;
-  transition: all 200ms cubic-bezier(0.65, 0, 0.25, 1);
+  transition: all 330ms cubic-bezier(0.65, 0, 0.25, 1);
 }
 .cta__final .btn--mini {
   font-size: 1.2rem;
@@ -262,10 +263,8 @@ button:hover .button-text {
 }
 
 body {
-  background-color: hsl(0, 0%, 100%);
-  background-image: radial-gradient(circle at 34% 47%, hsla(237, 80%, 40%, 0.3) 4.47%, transparent 73.15%), radial-gradient(circle at 74% 20%, hsla(248, 100%, 63%, 0.3) 3.49%, transparent 63.7%);
-  background-blend-mode: normal;
-  background-repeat: no-repeat;
+  background-color: #FAACA8;
+  background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
 }
 
 .section-divider {
@@ -292,6 +291,7 @@ section {
   font-size: 1.7rem;
   margin-inline: 10vw;
   color: #1E1926;
+  font-weight: 800;
   line-height: 1.2;
 }
 .section__title span {
@@ -302,15 +302,15 @@ section {
 }
 
 h1, h2, h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Sora", sans-serif;
 }
 
 p, span, a, button {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
 .custom-popup {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
 .navbar {
@@ -324,8 +324,8 @@ p, span, a, button {
   position: absolute;
   top: 26px;
   left: 20px;
-  font-size: 1.5rem;
-  color: #1E1926;
+  font-size: 1.6rem;
+  color: #390AE3;
 }
 .navbar .menu-items {
   height: auto;
@@ -441,7 +441,7 @@ p, span, a, button {
   }
   .navbar .nav-container .logo {
     position: static;
-    margin-top: 1.5rem;
+    margin-top: 1.4rem;
   }
   .navbar .nav-container .menu-items {
     transform: translateY(20%);
@@ -478,7 +478,7 @@ p, span, a, button {
     display: flex;
     position: absolute;
     right: 5%;
-    top: 4%;
+    top: 3.3%;
     gap: 4rem;
   }
   .navbar .nav-container .nav__social ul li img {
@@ -506,13 +506,16 @@ p, span, a, button {
 }
 .header .hero .hero__description {
   text-align: center;
-  margin-inline: 5vw;
+  margin-inline: 3vw;
   margin-top: 2rem;
 }
 .header .hero .hero__description .hero__title {
-  font-size: clamp(1.5rem, 1.5vw, 2.5rem);
+  font-size: clamp(1.7rem, 1.9vw, 3rem);
   margin-bottom: 1.3rem;
   line-height: 1.2;
+}
+.header .hero .hero__description .hero__title h1 {
+  font-weight: 800;
 }
 .header .hero .hero__description .hero__text {
   margin-inline: 5vw;
@@ -584,16 +587,13 @@ p, span, a, button {
   .header .hero .hero__description .hero__title {
     line-height: 1.2;
   }
-  .header .hero .hero__description .hero__text p {
-    font-size: 1.02rem;
-  }
   .header .hero .hero__description .hero__buttons {
     gap: 2rem;
   }
 }
 @media (min-width: 1300px) {
   .header .hero {
-    max-width: 1300px;
+    max-width: 1500px;
   }
   .header .hero .hero__img img {
     width: 60%;
@@ -602,7 +602,7 @@ p, span, a, button {
     text-align: center;
   }
   .header .hero .hero__description .hero__text p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   .header .hero .hero__description .hero__buttons .services__link {
     font-size: 1.1rem;
@@ -716,10 +716,7 @@ p, span, a, button {
 }
 .services .services__grid .services__box {
   margin-block: 2rem;
-  border: 1px solid rgb(253, 253, 253);
-  -webkit-box-shadow: 4px 7px 31px -19px rgba(0, 0, 0, 0.82);
-  -moz-box-shadow: 4px 7px 31px -19px rgba(0, 0, 0, 0.82);
-  box-shadow: 4px 7px 31px -15px rgba(0, 0, 0, 0.82);
+  border: 2px solid #FEF6FF;
   border-radius: 10px;
   padding: 1.5rem;
 }
@@ -775,10 +772,11 @@ p, span, a, button {
 }
 @media (min-width: 1300px) {
   .services .services__grid {
+    gap: 2rem;
     max-width: 1750px;
   }
   .services .services__grid .services__box .services__img img {
-    width: 50%;
+    width: 60%;
   }
 }
 .objetivos {
@@ -793,9 +791,12 @@ p, span, a, button {
   gap: 2rem;
 }
 .objetivos .objetivos__grid .objetivos__box {
-  background: linear-gradient(to top, #390ae3, #5500d5, #6600c8, #7100bb, #7900af);
+  background: linear-gradient(135deg, #390AE3, #E039E3);
   padding: 1.8rem 1rem;
-  border-radius: 5px;
+  border-radius: 15px;
+  -webkit-box-shadow: 10px 11px 22px -13px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 10px 11px 22px -13px rgba(0, 0, 0, 0.49);
+  box-shadow: 10px 11px 22px -13px rgba(0, 0, 0, 0.49);
 }
 .objetivos .objetivos__grid .objetivos__box .objetivos__icon {
   display: flex;
@@ -860,7 +861,7 @@ p, span, a, button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f6ebfa;
+  background-color: #fcdff1;
   border-radius: 20px;
   height: 50vh;
   width: 100%;
@@ -945,6 +946,9 @@ p, span, a, button {
   background-color: #FEF6FF;
   margin-inline: 2vw;
   border-radius: 10px;
+  -webkit-box-shadow: 10px 11px 22px -13px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 10px 11px 22px -13px rgba(0, 0, 0, 0.49);
+  box-shadow: 10px 11px 22px -13px rgba(0, 0, 0, 0.49);
 }
 .faq-contact .contact__container p {
   font-size: 1.6rem;
@@ -964,16 +968,6 @@ p, span, a, button {
   display: flex;
   flex-direction: column;
 }
-.faq-contact .contact__container form .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
 .faq-contact .contact__container form .input__box {
   padding: 2rem 0;
   width: 100%;
@@ -985,7 +979,7 @@ p, span, a, button {
   outline: none;
   background: transparent;
   padding-bottom: 1rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Karla", sans-serif;
   font-size: 1.7rem;
 }
 .faq-contact .contact__container form .input__box input::placeholder {
@@ -993,25 +987,20 @@ p, span, a, button {
 }
 .faq-contact .contact__container form textarea {
   display: block;
-  margin-block: 1rem;
+  margin-block: 2rem;
   width: 90%;
   height: 150px;
   background: transparent;
   border: 2px solid #1E1926;
   border-radius: 5px;
   font-size: 1.5rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Karla", sans-serif;
   outline: #390AE3;
   padding: 0.5rem;
   resize: none;
 }
 .faq-contact .contact__container form textarea::placeholder {
   color: #1E1926;
-}
-.faq-contact .contact__container form button {
-  width: min(45%, 200px);
-  font-size: 1rem;
-  margin-top: 1.3rem;
 }
 
 @media (min-width: 668px) and (max-width: 1024px) {
@@ -1023,7 +1012,10 @@ p, span, a, button {
     margin-right: auto;
   }
   .faq-contact .contact__container button {
-    margin-left: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 1.8rem;
   }
 }
 @media (min-width: 1025px) {

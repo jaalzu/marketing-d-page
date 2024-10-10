@@ -51,19 +51,23 @@
 // form button 
 
 #ninth>button{
-  transition:all .5s ease-in-out;
-  border: 2px solid $color-black;
-  border-radius: 8px;
+  border: none;
+  border-radius: 7px;
+  width: min(50%, 180px);
+  color: $color-white;
+  background-color: $color-primary;
   padding: 1rem 0;
+  outline: none;
   font-size:1.2rem;
   font-weight: $fw-bold;
-  margin-top: 1.3rem;
+  margin-top: .5rem;
+
+  &:hover{
+    opacity: .7;
+  }
 }
 
-#ninth:hover button{
-  background:$color-primary;
-  color:$color-white;
-}
+
 
 
 // whatsapp button 

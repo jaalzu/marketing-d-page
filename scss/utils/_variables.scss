@@ -1,17 +1,22 @@
-$ff-primary:"Montserrat", sans-serif;
-$ff-secondary:"Open Sans", sans-serif;
+$ff-primary:"Sora", sans-serif;
+$ff-secondary:"Karla", sans-serif;
+ 
+
 
 $fw-regular:400;
 $fw-bold:700;
+$fw-extrabold:800;
 
-$gradient-primary: linear-gradient(to top, #390ae3, #5500d5, #6600c8, #7100bb, #7900af);
+$gradient-primary:linear-gradient(135deg, #390AE3, #E039E3);
 $color-primary:#390AE3;
+
 $color-black:#1E1926;
 $color-white:#FEF6FF;
+$color-clients-bg:#fcdff1;
 
 
 $size:3em;
-$time: 200ms;
+$time: 330ms;
 $bezier: cubic-bezier(0.65, 0, 0.25, 1);
 
 
