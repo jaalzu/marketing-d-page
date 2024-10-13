@@ -7,10 +7,10 @@
         grid-template-columns: 1fr;
 
         .logo{
-            font-size: 2rem;
-            color: $color-white;
-            text-align: center;
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .logo.desktop{
@@ -36,7 +36,7 @@
         }
 
         .footer__social{
-            margin-top: 3rem;
+            margin-top: 3.5rem;
             margin-bottom: 3rem;
 
             ul{

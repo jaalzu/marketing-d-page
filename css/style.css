@@ -284,6 +284,10 @@ section {
   height: auto;
 }
 
+.img-logo {
+  width: 120px;
+}
+
 .section__title {
   text-align: center;
   margin-block: 4rem;
@@ -617,10 +621,10 @@ p, span, a, button, label, input {
   grid-template-columns: 1fr;
 }
 .footer .footer__grid .logo {
-  font-size: 2rem;
-  color: #FEF6FF;
-  text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer .footer__grid .logo.desktop {
   display: none;
@@ -639,7 +643,7 @@ p, span, a, button, label, input {
   opacity: 0.7;
 }
 .footer .footer__grid .footer__social {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   margin-bottom: 3rem;
 }
 .footer .footer__grid .footer__social ul {
