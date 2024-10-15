@@ -65,6 +65,10 @@
     .nav__social{
         display: none;
     }
+
+    .btn.primary.nav{
+        display: none;
+    }
     
     .nav-container .checkbox {
         position: absolute;
@@ -137,6 +141,9 @@
     }
 
 
+
+    
+
     
    
   @include respond-to(desktop) {
@@ -144,34 +151,37 @@
         padding-inline: 5vw;
         height: 100%;
 
+        .btn.primary.nav{
+            display: inline-flex;
+        }
+
         .nav-container{
             width: 100%;
             display: flex;
             margin-top: 0;
-            align-items: center;
+            align-items: end;
             
             .logo{
                 position: static;
-                margin-top: 1.4rem;
             }
 
             .menu-items{
-                transform: translateY(20%);
-                margin-right: 4rem;
+                transform: translateY(0%);
                 backdrop-filter: none;
-                margin-top: 2rem;
                 flex-direction: row;
                 border-top: none;
-                border-bottom: none;
+                 border-bottom: none;
+                margin-top:2.5rem;
+
                     ul{
                         display: flex;
                         margin-top: 0;
-                        gap: 2rem;
+                        gap: 2.5rem;
 
                         li{
                             margin-bottom: 0;
                             a{
-                                font-size: 1.3rem;
+                                font-size: 1.250rem;
                             }
                         }
                     }

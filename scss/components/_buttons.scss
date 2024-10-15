@@ -30,7 +30,9 @@
                 transition: 1s ease all;
             }
         }
-
+          &.nav{
+            display: inline-flex;
+          }
     }
 
 

@@ -29,6 +29,9 @@
   right: -50%;
   transition: 1s ease all;
 }
+.btn.primary.nav {
+  display: inline-flex;
+}
 .btn.secondary {
   font-weight: 700;
   color: #1E1926;
@@ -374,6 +377,9 @@ p, span, a, button, label, input {
 .navbar .nav__social {
   display: none;
 }
+.navbar .btn.primary.nav {
+  display: none;
+}
 .navbar .nav-container .checkbox {
   position: absolute;
   display: block;
@@ -436,35 +442,36 @@ p, span, a, button, label, input {
     padding-inline: 5vw;
     height: 100%;
   }
+  .navbar .btn.primary.nav {
+    display: inline-flex;
+  }
   .navbar .nav-container {
     width: 100%;
     display: flex;
     margin-top: 0;
-    align-items: center;
+    align-items: end;
   }
   .navbar .nav-container .logo {
     position: static;
-    margin-top: 1.4rem;
   }
   .navbar .nav-container .menu-items {
-    transform: translateY(20%);
-    margin-right: 4rem;
+    transform: translateY(0%);
     backdrop-filter: none;
-    margin-top: 2rem;
     flex-direction: row;
     border-top: none;
     border-bottom: none;
+    margin-top: 2.5rem;
   }
   .navbar .nav-container .menu-items ul {
     display: flex;
     margin-top: 0;
-    gap: 2rem;
+    gap: 2.5rem;
   }
   .navbar .nav-container .menu-items ul li {
     margin-bottom: 0;
   }
   .navbar .nav-container .menu-items ul li a {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
   }
   .navbar .nav-container .checkbox {
     display: none;
@@ -719,7 +726,10 @@ p, span, a, button, label, input {
 }
 .services .services__grid .services__box {
   margin-block: 2rem;
-  border: 1px solid #FEF6FF;
+  border: 1px solid #1E1926;
+  -webkit-box-shadow: 10px 10px 15px -12px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 10px 10px 15px -12px rgba(0, 0, 0, 0.35);
+  box-shadow: 10px 10px 15px -12px rgba(0, 0, 0, 0.35);
   border-radius: 10px;
   padding: 1.5rem;
 }
