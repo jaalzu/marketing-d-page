@@ -321,10 +321,15 @@ p, span, a, button, label, input {
 
 .navbar {
   width: 100%;
-  height: 0.3rem;
+  height: 4rem;
 }
 .navbar .nav-container {
-  margin-top: 5rem;
+  right: 0;
+  position: fixed;
+  top: 0;
+  height: 5rem;
+  width: 100%;
+  z-index: 4;
 }
 .navbar .nav-container .logo {
   position: absolute;
@@ -334,29 +339,25 @@ p, span, a, button, label, input {
   color: #390AE3;
 }
 .navbar .menu-items {
-  height: auto;
-  width: 100%;
-  backdrop-filter: blur(60px);
-  transform: translateY(-150%);
-  border-top: 2px solid #FEF6FF;
-  border-bottom: 2px solid #FEF6FF;
+  border-left: 2px solid #390AE3;
+  height: 100vh;
+  width: 65%;
+  padding-left: 1rem;
+  margin-left: auto;
+  background-color: #fcdff1;
+  transform: translateX(250%);
   display: flex;
   flex-direction: column;
+  padding-top: 5rem;
   transition: transform 0.5s ease-in-out;
-  text-align: center;
-  justify-content: center;
-}
-.navbar .menu-items ul {
-  margin-top: 1rem;
-  margin-bottom: 0.3rem;
 }
 .navbar .menu-items ul li {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 .navbar .menu-items ul li a {
   color: #1E1926;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   position: relative;
   overflow: hidden;
   background-clip: text;
@@ -437,6 +438,11 @@ p, span, a, button, label, input {
   display: none;
 }
 
+@media (min-width: 668px) and (max-width: 1024px) {
+  .navbar .menu-items {
+    width: 40%;
+  }
+}
 @media (min-width: 1025px) {
   .navbar {
     padding-inline: 5vw;
@@ -446,8 +452,11 @@ p, span, a, button, label, input {
     display: inline-flex;
   }
   .navbar .nav-container {
+    backdrop-filter: none;
+    border-radius: 0;
     width: 100%;
     display: flex;
+    position: static;
     margin-top: 0;
     align-items: end;
   }
@@ -455,12 +464,18 @@ p, span, a, button, label, input {
     position: static;
   }
   .navbar .nav-container .menu-items {
-    transform: translateY(0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(0%);
+    height: 100%;
+    width: 100%;
+    border-left: 0;
+    background-color: transparent;
+    padding-top: 2rem;
     backdrop-filter: none;
     flex-direction: row;
     border-top: none;
-    border-bottom: none;
-    margin-top: 2.5rem;
   }
   .navbar .nav-container .menu-items ul {
     display: flex;
@@ -471,7 +486,7 @@ p, span, a, button, label, input {
     margin-bottom: 0;
   }
   .navbar .nav-container .menu-items ul li a {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
   .navbar .nav-container .checkbox {
     display: none;
@@ -548,6 +563,7 @@ p, span, a, button, label, input {
   display: inline-flex;
   align-items: center;
   margin: 0;
+  z-index: 1;
   position: relative;
   overflow: hidden;
   background-clip: text;
@@ -711,7 +727,8 @@ p, span, a, button, label, input {
   }
 }
 .services {
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
 }
 .services .services__grid {
   display: grid;
@@ -793,7 +810,8 @@ p, span, a, button, label, input {
   }
 }
 .objetivos {
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
 }
 .objetivos .objetivos__grid {
   display: grid;
@@ -864,6 +882,7 @@ p, span, a, button, label, input {
 .clients {
   padding-inline: 5vw;
   padding-bottom: 4rem;
+  padding-top: 1rem;
 }
 .clients .swiper {
   width: 100%;

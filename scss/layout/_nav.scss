@@ -1,11 +1,14 @@
 .navbar {
     width: 100%;
-    height: .3rem;
-
-        .nav-container{
-            margin-top: 5rem;
-
-            .logo {
+    height: 4rem;
+    .nav-container{
+        right: 0;
+        position: fixed;
+        top: 0;
+        height: 5rem;
+        width: 100%;
+        z-index: 4;
+        .logo {
                 position: absolute;
                 top: 26px;
                 left: 20px;
@@ -15,29 +18,25 @@
         }
     
     .menu-items {
-        height: auto;
-        width: 100%;
-        backdrop-filter: blur(60px);
-        transform: translateY(-150%);
-        border-top: 2px solid $color-white;
-        border-bottom: 2px solid $color-white;
+        border-left: 2px solid $color-primary;
+        height: 100vh;
+        width: 65%;
+        padding-left: 1rem;
+        margin-left: auto;
+        background-color: $color-clients-bg;
+        transform: translateX(250%);
         display: flex;
         flex-direction: column;
+        padding-top: 5rem;
         transition: transform 0.5s ease-in-out;
-        text-align: center;
-        justify-content: center;
 
         ul{      
-            margin-top: 1rem;
-            margin-bottom: .3rem;
-
             li{
-                margin-bottom: 1.5rem;
-
+                margin-bottom: 2rem;
                 a{
                     color: $color-black;
                     font-weight: $fw-regular;
-                    font-size: 1.6rem;
+                    font-size: 1.8rem;
                     position: relative;
                     overflow: hidden;
                     background-clip: text;
@@ -142,7 +141,13 @@
 
 
 
-    
+    @include respond-to(tablet){
+        .navbar{
+            .menu-items{
+                width: 40%;
+            }
+        }
+    }
 
     
    
@@ -150,14 +155,16 @@
     .navbar{
         padding-inline: 5vw;
         height: 100%;
-
         .btn.primary.nav{
             display: inline-flex;
         }
-
+        
         .nav-container{
+            backdrop-filter: none;
+            border-radius: 0;
             width: 100%;
             display: flex;
+            position: static;
             margin-top: 0;
             align-items: end;
             
@@ -166,12 +173,18 @@
             }
 
             .menu-items{
-                transform: translateY(0%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transform: translateX(0%);
+                height: 100%;
+                width: 100%;
+                border-left: 0;
+                background-color: transparent;
+                padding-top: 2rem;
                 backdrop-filter: none;
                 flex-direction: row;
                 border-top: none;
-                 border-bottom: none;
-                margin-top:2.5rem;
 
                     ul{
                         display: flex;
@@ -181,7 +194,7 @@
                         li{
                             margin-bottom: 0;
                             a{
-                                font-size: 1.250rem;
+                                font-size: 1.5rem;
                             }
                         }
                     }

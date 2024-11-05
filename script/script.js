@@ -1,3 +1,23 @@
+// Selecciona el checkbox y todos los enlaces del menú
+const menuToggle = document.getElementById('menu-toggle');
+const menuLinks = document.querySelectorAll('.menu-items a');
+
+// Añade un evento de clic a cada enlace
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        menuToggle.checked = false; // Desmarca el checkbox para cerrar el menú
+    });
+});
+
+
+
+
+
+
+
+
+
+
 
 // swiper from clients comments
 var swiper = new Swiper(".mySwiper", {
