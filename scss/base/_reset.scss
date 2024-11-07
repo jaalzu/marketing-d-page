@@ -14,7 +14,10 @@ background-image: linear-gradient(90deg, #FAACA8 0%, #DDD6F3 100%);
 
 }
 
-
+::selection {
+    color: $color-white; 
+    background-color: $color-black;
+  }
 
 .section-divider {
     border: 1px solid $color-clients-bg;    
