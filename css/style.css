@@ -533,6 +533,8 @@ p, span, a, button, label, input {
 }
 .header .hero .hero__img img {
   width: 100%;
+  height: auto;
+  aspect-ratio: 16/10.7;
 }
 .header .hero .hero__description {
   text-align: center;
