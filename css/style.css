@@ -344,7 +344,7 @@ p, span, a, button, label, input {
   color: #390AE3;
 }
 .navbar .menu-items {
-  border-left: 2px solid #390AE3;
+  border-left: 3px solid #FEF6FF;
   height: 100vh;
   width: 65%;
   padding-left: 1rem;
@@ -530,11 +530,11 @@ p, span, a, button, label, input {
   display: flex;
   align-items: center;
   justify-content: center;
+  aspect-ratio: 3/1;
 }
 .header .hero .hero__img img {
   width: 100%;
-  height: auto;
-  aspect-ratio: 16/10.7;
+  height: 100%;
 }
 .header .hero .hero__description {
   text-align: center;
